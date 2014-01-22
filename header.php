@@ -8,7 +8,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <?php 
             $sitename = "Epic Photography"; 
-            $sidedescription = "High Resolution Photos for your Desktop";
+            $sitedescription = "High Resolution Photos for your Desktop";
             $sitepath = "http://people.oregonstate.edu/~hoeftc/epicphotos/";
         ?>
         <title>
@@ -23,8 +23,8 @@
         <link rel="author" type="text/plain" href="humans.txt" />
         <link rel="icon" type="image/gif" href="favicon.gif" />
         <link rel="icon" type="image/gif" href="favicon.ico" />
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="<?php echo $sitepath; ?>css/normalize.css">
+        <link rel="stylesheet" href="<?php echo $sitepath; ?>css/main.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
@@ -37,7 +37,7 @@
             </ul> 
         </nav>
         <header>
-            <h1><?php echo $sitename; ?></h1>
+            <h1><a href="<?php echo $sitepath;?>"><?php echo $sitename; ?></a></h1>
             <p><?php echo $sitedescription; ?></p>
         </header>
         <nav>

@@ -1,9 +1,11 @@
         </section>
         <footer>
-            <li><?php echo 'Updated ' . date('F j, Y',filemtime($_SERVER['SCRIPT_FILENAME'])) ?></li>
-            <li><a href="<?php echo $sitepath; ?>about/contact.php">Contact Me</a></li>
-            <li>Epic Photography &copy; <?php date('Y') ?> Cody Ray Freeman Hoeft.</li>
-            <li>Image Content is Property of their Respective Owners.</li>
+            <ul>
+                <li><?php echo 'Updated ' . date('F j, Y',filemtime($_SERVER['SCRIPT_FILENAME'])) ?></li>
+                <li><a href="<?php echo $sitepath; ?>about/contact.php">Contact Me</a></li>
+                <li>Epic Photography &copy; <?php print date('Y') ?> Cody Ray Freeman Hoeft.</li>
+                <li>Images are Property of their Respective Owners.</li>
+            </ul>
         </footer>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
