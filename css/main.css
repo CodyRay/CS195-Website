@@ -105,7 +105,7 @@ body {
     background-color: #F3F3F3;
 }
 
-#container div {
+div#container {
     margin: 0 auto; /*Centers page*/
     padding: 0;
     max-width: 1080px;
@@ -113,10 +113,10 @@ body {
     border: 5px solid #DF8101;
 }
 
-#content section {
-    width:79%;  /* Change for a 3-column layout. */ 
+section#content {
+    width: 50%;  /* Change for a 3-column layout. */ 
     margin:0 auto;
-    border:1px solid #000; 
+    border: 5px solid #DF8101;
     padding:10px; 
     min-height:300px;
 }
@@ -140,7 +140,7 @@ footer {
 
 /* Navigation Menues */
 
-#tools nav {
+nav#tools {
     margin: 0;
     border: 5px solid #DF8101;
     padding: 0;
@@ -148,7 +148,7 @@ footer {
     width: auto;
 }
 
-#leagal nav {
+nav#leagal {
     margin: 0;
     padding: 0;
     height: auto;
