@@ -28,55 +28,56 @@
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        <nav>
-            <ul>
-                <li><a href="#content" title="Skip To Content">&darr;</a></li>
-            </ul> 
-        </nav>
-        <header>
-            <h1><a href="<?php echo $sitepath;?>"><?php echo $sitename; ?></a></h1>
-            <p><?php echo $sitedescription; ?></p>
-        </header>
-        <nav>
-            <ul> 
-                <li><a href="<?php echo $sitepath; ?>categories/nature">Nature</a> 
-                <ul> 
-                    <li><a href="<?php echo $sitepath; ?>categories/nature/mountains.php">Mountains</a></li> 
-                    <li><a href="<?php echo $sitepath; ?>categories/nature/trees.php">Trees</a></li> 
-                    <li><a href="<?php echo $sitepath; ?>categories/nature/water.php">Water</a></li> 
+        <div id="container">
+            <!--[if lt IE 7]>
+                <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+            <![endif]-->
+            <nav id="skip">
+                <ul>
+                    <li><a href="#content" title="Skip To Content">&darr;</a></li>
                 </ul> 
-                <li><a href="<?php echo $sitepath; ?>categories/mankind.php">Mankind</a></li> 
-                <li><a href="<?php echo $sitepath; ?>categories/closeup.php">Close Up</a></li> 
-                <li><a href="<?php echo $sitepath; ?>categories/astronomy.php">Astronomy</a></li> 
-                <li><a href="<?php echo $sitepath; ?>categories/fireworks.php">Fireworks</a></li> 
-            </ul>
-        </nav>
-        <nav>
-            <ul> 
-                <li><a href="<?php echo $sitepath; ?>about/contact.php">Contact Me</a></li> 
-                <li><a href="<?php echo $sitepath; ?>about">About Me</a></li> 
-                <li><a href="<?php echo $sitepath; ?>about/remove.php">Remove a Photo</a></li> 
-                <li><a href="<?php echo $sitepath; ?>about/share.php">Share This Site</a></li> 
-                <li><a href="<?php echo $sitepath; ?>categories">List Photo Categories</a></li> 
-                <li><a href="#" onclick="window.print(); return false;" title="Opens the print dialog box.">Print</a></li> 
-            </ul>
-        </nav>
-        <section id="featured">
-        <h1><?php print $pagetitle;?></h1>
+            </nav>
+            <header>
+                <h1><a href="<?php echo $sitepath;?>"><?php echo $sitename; ?></a></h1>
+                <p><?php echo $sitedescription; ?></p>
+            </header>
+            <nav id="main">
+                <ul> 
+                    <li><a href="<?php echo $sitepath; ?>categories/nature">Nature</a> 
+                    <ul> 
+                        <li><a href="<?php echo $sitepath; ?>categories/nature/mountains.php">Mountains</a></li> 
+                        <li><a href="<?php echo $sitepath; ?>categories/nature/trees.php">Trees</a></li> 
+                        <li><a href="<?php echo $sitepath; ?>categories/nature/water.php">Water</a></li> 
+                    </ul> 
+                    <li><a href="<?php echo $sitepath; ?>categories/mankind.php">Mankind</a></li> 
+                    <li><a href="<?php echo $sitepath; ?>categories/closeup.php">Close Up</a></li> 
+                    <li><a href="<?php echo $sitepath; ?>categories/astronomy.php">Astronomy</a></li> 
+                    <li><a href="<?php echo $sitepath; ?>categories/fireworks.php">Fireworks</a></li> 
+                </ul>
+            </nav>
+            <nav id="tools">
+                <ul> 
+                    <li><a href="<?php echo $sitepath; ?>about/contact.php">Contact Me</a></li> 
+                    <li><a href="<?php echo $sitepath; ?>about">About Me</a></li> 
+                    <li><a href="<?php echo $sitepath; ?>about/remove.php">Remove a Photo</a></li> 
+                    <li><a href="<?php echo $sitepath; ?>about/share.php">Share This Site</a></li> 
+                    <li><a href="<?php echo $sitepath; ?>categories">List Photo Categories</a></li> 
+                    <li><a href="#" onclick="window.print(); return false;" title="Opens the print dialog box.">Print</a></li> 
+                </ul>
+            </nav>
+            <section id="featured">
+            <h1><?php print $pagetitle;?></h1>
 
-        </section>
-        <section id="content">
+            </section>
+            <section id="content">
 
-        
-        <!--Article Specific Functions
-        <nav>
-            <ul> 
-                <li><a href="#" onclick="window.print(); return false;" title="Opens the print dialog box.">Print</a></li> 
-                <li>Save As PDF</li> 
-                <li>Share this Image</li> 
-                <li>Download</li> 
-            </ul>
-        </nav>-->
+            
+            <!--Article Specific Functions
+            <nav>
+                <ul> 
+                    <li><a href="#" onclick="window.print(); return false;" title="Opens the print dialog box.">Print</a></li> 
+                    <li>Save As PDF</li> 
+                    <li>Share this Image</li> 
+                    <li>Download</li> 
+                </ul>
+            </nav>-->
