@@ -3,11 +3,8 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
-
-# THANKS
-
-    <name>
+    Cody Ray Freeman Hoeft -- Designer
+    Oregon State University -- CS 195
 
 # TECHNOLOGY COLOPHON
 
