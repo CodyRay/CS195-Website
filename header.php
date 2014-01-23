@@ -64,19 +64,5 @@
                 <li><a href="#" onclick="window.print(); return false;" title="Opens the print dialog box.">Print</a></li> 
             </ul>
         </nav>
-        <section id="featured">
-        <h1><?php print $pagetitle;?></h1>
-
-        </section>
         <section id="content">
-
-        
-        <!--Article Specific Functions
-        <nav>
-            <ul> 
-                <li><a href="#" onclick="window.print(); return false;" title="Opens the print dialog box.">Print</a></li> 
-                <li>Save As PDF</li> 
-                <li>Share this Image</li> 
-                <li>Download</li> 
-            </ul>
-        </nav>-->
+            <h1><?php print $pagetitle;?></h1>
