@@ -30,12 +30,12 @@ html {
  */
 
 ::-moz-selection {
-    background: #b3d4fc;
+    background: #ADC6D6;
     text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
+    background: #ADC6D6;
     text-shadow: none;
 }
 
@@ -113,6 +113,11 @@ div#container {
     border: 5px solid #DF8101;
 }
 
+section#featured {
+    border: 5px solid #DF8101;
+    padding: 20px 0;
+}
+
 section#content {
     width: 50%;  /* Change for a 3-column layout. */ 
     margin:0 auto;
@@ -155,6 +160,21 @@ nav#leagal {
     width: auto;
 }
 
+nav#main {
+    margin: 0;
+    border: 5px solid #DF8101;
+    padding: 0;
+    height: auto;
+    width: auto;
+}
+
+nav#skip {
+    margin: 0;
+    border: 5px solid #DF8101;
+    padding: 0;
+    height: auto;
+    width: auto;
+}
 
 
 

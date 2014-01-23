@@ -20,12 +20,12 @@
         <meta name="author" content="Cody Ray Freeman Hoeft" />
         <meta name="keywords" content="desktop wallpaper, desktop background, photo backgrounds, picture background, nature photos, close-up photos, background slideshow, wallpaper slideshow, cool desktop wallpaper, cool desktop background, computer backgrounds, computer wallpapers, desktop wallpaper hd, background screen, desktop background hd, wallpaper desktop download, background desktop download, nature wallpaper desktop, nature background desktop, pc desktop wallpaper, desktop wallpaper slideshow" />
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <link rel="author" type="text/plain" href="humans.txt" />
-        <link rel="icon" type="image/gif" href="favicon.gif" />
-        <link rel="icon" type="image/gif" href="favicon.ico" />
-        <link rel="stylesheet" href="<?php echo $sitepath; ?>css/normalize.css">
-        <link rel="stylesheet" href="<?php echo $sitepath; ?>css/main.css">
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <link rel="author" type="text/plain" href="<?php echo $sitepath; ?>/humans.txt" />
+        <link rel="icon" type="image/gif" href="<?php echo $sitepath; ?>/favicon.gif" />
+        <link rel="icon" type="image/gif" href="<?php echo $sitepath; ?>/favicon.ico" />
+        <link rel="stylesheet" href="<?php echo $sitepath; ?>/css/normalize.css">
+        <link rel="stylesheet" href="<?php echo $sitepath; ?>/css/main.css">
+        <script src="<?php echo $sitepath; ?>/js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
         <div id="container">
@@ -69,15 +69,16 @@
             <h1><?php print $pagetitle;?></h1>
 
             </section>
-            <section id="content">
+            <div id="sub_container">
+                <section id="content">
 
-            
-            <!--Article Specific Functions
-            <nav>
-                <ul> 
-                    <li><a href="#" onclick="window.print(); return false;" title="Opens the print dialog box.">Print</a></li> 
-                    <li>Save As PDF</li> 
-                    <li>Share this Image</li> 
-                    <li>Download</li> 
-                </ul>
-            </nav>-->
+                
+                <!--Article Specific Functions
+                <nav>
+                    <ul> 
+                        <li><a href="#" onclick="window.print(); return false;" title="Opens the print dialog box.">Print</a></li> 
+                        <li>Save As PDF</li> 
+                        <li>Share this Image</li> 
+                        <li>Download</li> 
+                    </ul>
+                </nav>-->

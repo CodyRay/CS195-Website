@@ -1,0 +1,6 @@
+<?php
+$title = "Winter";
+$category = "nature";
+$author = "";
+$tags = array("water", "trees" );
+?>
