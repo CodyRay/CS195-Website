@@ -98,7 +98,7 @@ textarea {
    ========================================================================== */
 
 body {
-    font-family: sans-serif, helvetica, sans;
+    font-family: 'Lato', sans-serif, helvetica, sans;
     font-size: 16px;
     line-height: 1.6em;
     color: #444444;
@@ -110,20 +110,21 @@ div#container {
     padding: 0;
     max-width: 1080px;
     min-width: 320px;
-    border: 5px solid #DF8101;
-}
+    border-width: 0 5px;
+    border-color: rgba(166, 42, 1, .5);
+    border-style: solid;
 
-section#featured {
-    border: 5px solid #DF8101;
-    padding: 20px 0;
 }
 
 section#content {
     width: 50%;  /* Change for a 3-column layout. */ 
     margin:0 auto;
-    border: 5px solid #DF8101;
     padding:10px; 
     min-height:300px;
+    border-width: 5px 5px 0 5px;
+    border-color: rgba(190, 80, 1, .5);
+    border-style: solid;
+    background-color: rgb(255, 255, 255);
 }
 
 header {
@@ -145,7 +146,7 @@ footer {
 
 /* Navigation Menues */
 
-nav#tools {
+nav#tools, nav#skip {
     margin: 0;
     border: 5px solid #DF8101;
     padding: 0;
@@ -168,13 +169,6 @@ nav#main {
     width: auto;
 }
 
-nav#skip {
-    margin: 0;
-    border: 5px solid #DF8101;
-    padding: 0;
-    height: auto;
-    width: auto;
-}
 
 
 
@@ -290,6 +284,21 @@ nav#skip {
 
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
+nav#leftcolumn {
+   float:left; 
+   width:20%; 
+   margin:0; 
+   border:1px solid #ccc; 
+   padding:0; 
+}
+nav#rightcolumn {
+   float:right; 
+   width:20%; 
+    height: 100%;
+   margin:0; 
+   border:1px solid #ccc; 
+   padding:0; 
+}
 }
 
 @media print,

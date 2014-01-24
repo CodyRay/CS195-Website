@@ -26,6 +26,7 @@
         <link rel="stylesheet" href="<?php echo $sitepath; ?>/css/normalize.css">
         <link rel="stylesheet" href="<?php echo $sitepath; ?>/css/main.css">
         <script src="<?php echo $sitepath; ?>/js/vendor/modernizr-2.6.2.min.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,900' rel='stylesheet' type='text/css'>
     </head>
     <body>
         <div id="container">
@@ -65,13 +66,16 @@
                     <li><a href="#" onclick="window.print(); return false;" title="Opens the print dialog box.">Print</a></li> 
                 </ul>
             </nav>
-            <section id="featured">
-            <h1><?php print $pagetitle;?></h1>
-
             </section>
+            <h1><?php print $pagetitle;?></h1>
             <div id="sub_container">
+            <nav id="rightcolumn">
+                <p>HELLO WORLD</p>
+            </nav>
+            <nav id="leftcolumn">
+                <p>HELLO WORLD</p>
+            </nav>
                 <section id="content">
-
                 
                 <!--Article Specific Functions
                 <nav>
