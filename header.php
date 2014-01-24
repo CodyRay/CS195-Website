@@ -56,10 +56,13 @@
         </nav>
         <nav>
             <ul> 
-                <li><a href="<?php echo $sitepath; ?>about/contact.php">Contact Me</a></li> 
-                <li><a href="<?php echo $sitepath; ?>about">About Me</a></li> 
-                <li><a href="<?php echo $sitepath; ?>about/remove.php">Remove a Photo</a></li> 
-                <li><a href="<?php echo $sitepath; ?>about/share.php">Share This Site</a></li> 
+                <li><a href="<?php echo $sitepath; ?>about">About Me</a> 
+                <ul>
+                    <li><a href="<?php echo $sitepath; ?>about/contact.php">Contact Me</a></li> 
+                    <li><a href="<?php echo $sitepath; ?>about/remove.php">Remove a Photo</a></li> 
+                    <li><a href="<?php echo $sitepath; ?>about/share.php">Share This Site</a></li> 
+                </ul>
+                </li>
                 <li><a href="<?php echo $sitepath; ?>categories">List Photo Categories</a></li> 
                 <li><a href="#" onclick="window.print(); return false;" title="Opens the print dialog box.">Print</a></li> 
             </ul>
