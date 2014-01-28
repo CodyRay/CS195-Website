@@ -1,3 +1,4 @@
+<?php $pagetitle="Welcome to Epic Photographpy"; ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -56,22 +57,57 @@
                     <li><a href="<?php echo $sitepath; ?>categories/fireworks.php">Fireworks</a></li> 
                 </ul>
             </nav>
-            <nav id="tools">
-                <ul> 
-                    <li><a href="<?php echo $sitepath; ?>about/contact.php">Contact Me</a></li> 
-                    <li><a href="<?php echo $sitepath; ?>about">About Me</a></li> 
-                    <li><a href="<?php echo $sitepath; ?>about/remove.php">Remove a Photo</a></li> 
-                    <li><a href="<?php echo $sitepath; ?>about/share.php">Share This Site</a></li> 
-                    <li><a href="<?php echo $sitepath; ?>categories">List Photo Categories</a></li> 
-                    <li><a href="#" onclick="window.print(); return false;" title="Opens the print dialog box.">Print</a></li> 
-                </ul>
-            </nav>
             <h1><?php print $pagetitle;?></h1>
             <div id="sub_container">
-            <nav id="rightcolumn">
-                <p>HELLO WORLD</p>
-            </nav>
+            <?php if(0): ?>
+                <nav id="rightcolumn">
+                    <p>HELLO WORLD</p>
+                </nav>
+            <?php endif; ?>
             <nav id="leftcolumn">
-                <p>HELLO WORLD</p>
+                <nav id="tools">
+                    <ul> 
+                        <li><a href="<?php echo $sitepath; ?>about">About Me</a> 
+                        <ul>
+                            <li><a href="<?php echo $sitepath; ?>about/contact.php">Contact Me</a></li> 
+                            <li><a href="<?php echo $sitepath; ?>about/remove.php">Remove a Photo</a></li> 
+                            <li><a href="<?php echo $sitepath; ?>about/share.php">Share This Site</a></li> 
+                        </ul>
+                        </li>
+                        <li><a href="<?php echo $sitepath; ?>categories">List Photo Categories</a></li> 
+                        <li><a href="#" onclick="window.print(); return false;" title="Opens the print dialog box.">Print</a></li> 
+                    </ul>
+                </nav>
             </nav>
                 <section id="content">
+                    <p>Epic Photography provides a large collection of High Resolution Photos that look great in a desktop background slideshow. My site will provide images that have superior quality compared to others The Photos on this site have been handpicked by me for their beauty over the past five years. I only select natural images: scenic pictures, macro close up images, and Astronomy Pictures. But other people should have an epic background slideshow, this website will allow anyone to download the images and use them on their own machine</p>
+                </section>
+            </div> 
+            <footer>
+                <nav id="leagal">
+                    <ul>
+                        <li><?php echo 'Updated ' . date('F j, Y',filemtime($_SERVER['SCRIPT_FILENAME'])) ?></li>
+                        <li><a href="<?php echo $sitepath; ?>about/contact.php">Contact Me</a></li>
+                        <li>Epic Photography &copy; <?php print date('Y') ?> Cody Ray Freeman Hoeft.</li>
+                        <li>Images are Property of their Respective Owners.</li>
+                    </ul>
+                </nav>
+            </footer>
+
+            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+            <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+            <script src="js/plugins.js"></script>
+            <script src="js/main.js"></script>
+
+            <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+            <script>
+                (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+                function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+                e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+                e.src='//www.google-analytics.com/analytics.js';
+                r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+                ga('create', 'UA-47369412-1', 'oregonstate.edu');ga('send','pageview');
+            </script>
+        </div>
+    </body>
+</html>

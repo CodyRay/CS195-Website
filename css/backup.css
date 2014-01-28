@@ -113,54 +113,68 @@ body {
 }
 
 div#container {
-   margin: 0 auto;
-   padding:0;
-   max-width:1080px; 
-   min-width:320px;/*Default 320px*/ 
-   /*border:1px solid #cccccc;  /*default: 1px solid #cccccc;*/
-   border-width: 0 3px;
-   border-style: solid;
-   border-color: gray;
-   /* My Stuff */
+    margin: 0 auto; /*Centers page*/
+    padding: 0;
+    max-width: 1080px;
+    min-width: 320px;
+    border-width: 0 5px;
+    border-color: rgba(166, 42, 1, .5);
+    border-style: solid;
+
 }
 
+section#content {
+    width: 50%;  /* Change for a 3-column layout. */ 
+    margin:0 auto;
+    padding:10px; 
+    min-height:300px;
+    border-width: 5px 5px 0 5px;
+    border-color: rgba(190, 80, 1, .5);
+    border-style: solid;
+    background-color: rgb(255, 255, 255);
+}
 
+header {
+    margin: 0;
+    border: 5px solid #DF8101;
+    padding: 0;
+    height: auto;
+    width: auto;
+}
 
+footer {
+    margin: 1;
+    border: 5px solid #DF8101;
+    padding: 0;
+    height: auto;
+    width: auto;
+    clear: both;
+}
 
+/* Navigation Menues */
 
+nav#tools, nav#skip {
+    margin: 0;
+    border: 5px solid #DF8101;
+    padding: 0;
+    height: auto;
+    width: auto;
+}
 
+nav#leagal {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: auto;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+nav#main {
+    margin: 0;
+    border: 5px solid #DF8101;
+    padding: 0;
+    height: auto;
+    width: auto;
+}
 
 
 
@@ -277,52 +291,21 @@ div#container {
 
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+nav#leftcolumn {
+   float:left; 
+   width:20%; 
+   margin:0; 
+   border:1px solid #ccc; 
+   padding:0; 
+}
+nav#rightcolumn {
+   float:right; 
+   width:20%; 
+    height: 100%;
+   margin:0; 
+   border:1px solid #ccc; 
+   padding:0; 
+}
 }
 
 @media print,
