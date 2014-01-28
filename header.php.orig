@@ -76,3 +76,36 @@
                 <p>HELLO WORLD</p>
             </nav>
                 <section id="content">
+                
+                <!--Article Specific Functions
+                <nav>
+                    <ul> 
+                        <li><a href="#" onclick="window.print(); return false;" title="Opens the print dialog box.">Print</a></li> 
+                        <li>Save As PDF</li> 
+                        <li>Share this Image</li> 
+                        <li>Download</li> 
+                    </ul>
+                </nav>-->
+=======
+                <li><a href="<?php echo $sitepath; ?>categories/mankind.php">Mankind</a></li> 
+                <li><a href="<?php echo $sitepath; ?>categories/closeup.php">Close Up</a></li> 
+                <li><a href="<?php echo $sitepath; ?>categories/astronomy.php">Astronomy</a></li> 
+                <li><a href="<?php echo $sitepath; ?>categories/fireworks.php">Fireworks</a></li> 
+            </ul>
+        </nav>
+        <nav>
+            <ul> 
+                <li><a href="<?php echo $sitepath; ?>about">About Me</a> 
+                <ul>
+                    <li><a href="<?php echo $sitepath; ?>about/contact.php">Contact Me</a></li> 
+                    <li><a href="<?php echo $sitepath; ?>about/remove.php">Remove a Photo</a></li> 
+                    <li><a href="<?php echo $sitepath; ?>about/share.php">Share This Site</a></li> 
+                </ul>
+                </li>
+                <li><a href="<?php echo $sitepath; ?>categories">List Photo Categories</a></li> 
+                <li><a href="#" onclick="window.print(); return false;" title="Opens the print dialog box.">Print</a></li> 
+            </ul>
+        </nav>
+        <section id="content">
+            <h1><?php print $pagetitle;?></h1>
+>>>>>>> master

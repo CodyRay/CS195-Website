@@ -76,3 +76,13 @@
                 <p>HELLO WORLD</p>
             </nav>
                 <section id="content">
+                
+                <!--Article Specific Functions
+                <nav>
+                    <ul> 
+                        <li><a href="#" onclick="window.print(); return false;" title="Opens the print dialog box.">Print</a></li> 
+                        <li>Save As PDF</li> 
+                        <li>Share this Image</li> 
+                        <li>Download</li> 
+                    </ul>
+                </nav>-->
