@@ -396,7 +396,7 @@ ul.vertical li {position:relative; display:block;}
 ul.vertical li a {text-decoration:none; display:block;}
 
 ul.vertical li ul { display:none; position:absolute; z-index:999; right: 100%; top: -100%; } 
-ul.vertical li:hover ul { display:block; border: } 
+ul.vertical li:hover ul { display:block; } 
 ul.vertical li li { display: block; }
 
 #legal li {display: inline-block; }
