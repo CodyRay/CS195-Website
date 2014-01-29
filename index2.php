@@ -21,22 +21,23 @@
         <meta name="author" content="Cody Ray Freeman Hoeft" />
         <meta name="keywords" content="desktop wallpaper, desktop background, photo backgrounds, picture background, nature photos, close-up photos, background slideshow, wallpaper slideshow, cool desktop wallpaper, cool desktop background, computer backgrounds, computer wallpapers, desktop wallpaper hd, background screen, desktop background hd, wallpaper desktop download, background desktop download, nature wallpaper desktop, nature background desktop, pc desktop wallpaper, desktop wallpaper slideshow" />
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <link rel="author" type="text/plain" href="<?php echo $sitepath; ?>/humans.txt" />
-        <link rel="icon" type="image/gif" href="<?php echo $sitepath; ?>/favicon.gif" />
-        <link rel="icon" type="image/gif" href="<?php echo $sitepath; ?>/favicon.ico" />
-        <link rel="stylesheet" href="<?php echo $sitepath; ?>/css/normalize.css">
-        <link rel="stylesheet" href="<?php echo $sitepath; ?>/css/main.css">
-        <script src="<?php echo $sitepath; ?>/js/vendor/modernizr-2.6.2.min.js"></script>
+        <link rel="author" type="text/plain" href="<?php echo $sitepath; ?>humans.txt" />
+        <link rel="icon" type="image/gif" href="<?php echo $sitepath; ?>favicon.gif" />
+        <link rel="icon" type="image/gif" href="<?php echo $sitepath; ?>favicon.ico" />
+        <link rel="stylesheet" href="<?php echo $sitepath; ?>css/normalize.css">
+        <link rel="stylesheet" href="<?php echo $sitepath; ?>css/main.css">
+        <script src="<?php echo $sitepath; ?>js/vendor/modernizr-2.6.2.min.js"></script>
         <link href='http://fonts.googleapis.com/css?family=Lato:400,900' rel='stylesheet' type='text/css'>
     </head>
     <body>
-        <div id="container">
+        <div id="container" class="boxshadows">
             <!--[if lt IE 7]>
                 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
             <![endif]-->
             <nav id="skip">
-                <ul>
+                <ul class="horizontal">
                     <li><a href="#content" title="Skip To Content">&darr;</a></li>
+                    <li><a href="#" onclick="window.print(); return false;" title="Opens the print dialog box.">Print</a></li>
                 </ul> 
             </nav>
             <header>
@@ -44,7 +45,7 @@
                 <p><?php echo $sitedescription; ?></p>
             </header>
             <nav id="main">
-                <ul> 
+                <ul class="horizontal"> 
                     <li><a href="<?php echo $sitepath; ?>categories/nature">Nature</a> 
                     <ul> 
                         <li><a href="<?php echo $sitepath; ?>categories/nature/mountains.php">Mountains</a></li> 
@@ -58,15 +59,9 @@
                 </ul>
             </nav>
             <h1><?php print $pagetitle;?></h1>
-            <div id="sub_container">
-            <?php if(0): ?>
-                <nav id="rightcolumn">
-                    <p>HELLO WORLD</p>
-                </nav>
-            <?php endif; ?>
-            <nav id="leftcolumn">
+            <section id="rightcolumn" class="roundcorners boxshadows">
                 <nav id="tools">
-                    <ul> 
+                    <ul class="vertical"> 
                         <li><a href="<?php echo $sitepath; ?>about">About Me</a> 
                         <ul>
                             <li><a href="<?php echo $sitepath; ?>about/contact.php">Contact Me</a></li> 
@@ -75,17 +70,20 @@
                         </ul>
                         </li>
                         <li><a href="<?php echo $sitepath; ?>categories">List Photo Categories</a></li> 
-                        <li><a href="#" onclick="window.print(); return false;" title="Opens the print dialog box.">Print</a></li> 
                     </ul>
                 </nav>
-            </nav>
-                <section id="content">
-                    <p>Epic Photography provides a large collection of High Resolution Photos that look great in a desktop background slideshow. My site will provide images that have superior quality compared to others The Photos on this site have been handpicked by me for their beauty over the past five years. I only select natural images: scenic pictures, macro close up images, and Astronomy Pictures. But other people should have an epic background slideshow, this website will allow anyone to download the images and use them on their own machine</p>
+            </section>
+            <section id="content">
+                <p>Epic Photography provides a large collection of High Resolution Photos that look great in a desktop background slideshow. My site will provide images that have superior quality compared to others The Photos on this site have been handpicked by me for their beauty over the past five years. I only select natural images: scenic pictures, macro close up images, and Astronomy Pictures. But other people should have an epic background slideshow, this website will allow anyone to download the images and use them on their own machine</p>
+            </section>
+            <?php if(0): ?>
+                <section id="leftcolumn">
+                    <p>HELLO WORLD</p>
                 </section>
-            </div> 
+            <?php endif; ?>
             <footer>
-                <nav id="leagal">
-                    <ul>
+                <nav id="legal">
+                    <ul class="horizontal">
                         <li><?php echo 'Updated ' . date('F j, Y',filemtime($_SERVER['SCRIPT_FILENAME'])) ?></li>
                         <li><a href="<?php echo $sitepath; ?>about/contact.php">Contact Me</a></li>
                         <li>Epic Photography &copy; <?php print date('Y') ?> Cody Ray Freeman Hoeft.</li>
@@ -95,9 +93,9 @@
             </footer>
 
             <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-            <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-            <script src="js/plugins.js"></script>
-            <script src="js/main.js"></script>
+            <script>window.jQuery || document.write('<script src="<?php echo $sitepath; ?>js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+            <script src="<?php echo $sitepath; ?>js/plugins.js"></script>
+            <script src="<?php echo $sitepath; ?>js/main.js"></script>
 
             <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
             <script>

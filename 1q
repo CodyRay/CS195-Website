@@ -97,97 +97,43 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-/* 
- * http://www.paulirish.com/2012/box-sizing-border-box-ftw/ 
- * apply a natural box layout model to all elements 
- */
-*, *:before, *:after {
-  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
-}
-
 a {text-decoration: none;}
 a:link {color:#042148;}
 a:visited {color:#042148;}
 a:hover {color:#A62A01; background-color: #ADC6D6;}
 a:focus {color: #A62A01; outline:2px dotted #A62A01;}
 a:active {color:#A62A01;}
-a.current {color:#A62A01;}
-
-/*CSS3 Generator White Text Shadow*/
-.textshadows {text-shadow: 0 0 10px #FFFFFF;}
-
-.boxshadows 
-{
-    /*CSS3 Generator Box Shadow*/
-    -webkit-box-shadow: 0 0 40px 20px rgba(128,128,128,.3);
-    box-shadow: 0 0 40px 20px rgba(128,128,128,.3);
-}
-
-.roundcorners { -webkit-border-radius: 5px 5px 5px 5px; border-radius: 5px 5px 5px 5px; }
 
 body {
     font-family: 'Lato', sans-serif, helvetica, sans;
     font-size: 16px;
     line-height: 1.6em;
     color: #444444;
-    background-color: #dadada;/*Added this color because needed a darker grey */
+    background-color: #F3F3F3;
 }
 
 div#container {
-    margin: 0 auto;
-    padding: 0 20px 20px 20px;
-    max-width:1080px; 
-    min-width:320px;/*Default 320px*/ 
-    background-color: #F3F3F3;
-    /*border:1px solid #cccccc;  /*default: 1px solid #cccccc;*/
-    /*
-    border-width: 0 3px 3px 3px;
-    border-style: solid;
-    border-color: gray;
-    /* My Stuff */
-    /*Border Radius {I only want the bottom ones here*/
-    -webkit-border-radius: 0 0 9px 9px;
-    border-radius: 0 0 9px 9px;
+   margin: 0 auto;
+   padding: 0 20px;
+   max-width:1080px; 
+   min-width:320px;/*Default 320px*/ 
+   /*border:1px solid #cccccc;  /*default: 1px solid #cccccc;*/
+   border-width: 1px 3px;
+   border-style: solid;
+   border-color: gray;
+   /* My Stuff */
 }
 
-header, footer, nav#tools, nav#main, nav#skip, nav#legal
-{
-    margin: 0;
-    padding: 0;
-    height: auto;
-    width: auto;
-    /*border: 1px dashed black;*/
-}
-
-footer { border-width: 2px 0 0 0; border-style: solid; border-color: #DADADA; }
-
-
-nav ul {padding: 10px 10px 10px 40px; margin: 0;}
 
 
 
-/*The following have custom styles for the desktop version*/
 
 
-section#leftcolumn, section#rightcolumn
-{
-    margin: 50px 0;
-    padding: 0;
-    background-color: Salmon;
 
-}
 
-section#content
-{
-    margin: 0;
-    padding: 10px;
-}
-/*Make Skip Top Menu Horizontal */
-#skip ul, #skip li {padding: 5px 20px;}
-#skip ul.horizontal { white-space: nowrap; }
-#skip ul.horizontal li { position: relative; display: inline-block; vertical-align: top; }
-#skip ul.horizontal li a { display: inline-block; text-decoration: none; }
-/*Hacks for IE: ul .horizontal li { display: -moz-inline-stack; display: inline-block; zoom: 1; *display: inline; position: relative; }*/
+
+
+
 
 
 
@@ -332,63 +278,19 @@ section#content
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
 
-section#leftcolumn
-{
-    float: left;
-}
-
-section#rightcolumn
-{
-    float: right;
-}
-
-section#leftcolumn, section#rightcolumn
-{
-    width: 225px;
-}
-
-section#content
-{
-    width: auto;
-    margin-right: 225px;
-}
-
-footer
-{
-    clear: both; /*Has to do with columns*/
-}
-
-nav ul, nav li {padding: 5px; margin: 0;}
-/*Make Menus Horizontal */
-ul.horizontal { white-space: nowrap; }
-ul.horizontal li { position: relative; display: inline-block; vertical-align: top; }
-ul.horizontal li a { display: inline-block; text-decoration: none; }
-/*Hacks for IE: ul .horizontal li { display: -moz-inline-stack; display: inline-block; zoom: 1; *display: inline; position: relative; }*/
-
-/*Slide Out Menus*/
-ul.horizontal li ul 
-{ 
-    display: none; 
-    position: absolute; 
-    top: 100%;
-    z-index: 999;
-    margin: 0;
-    padding: 0;
-}
-ul.horizontal li:hover ul { display: block; border: 5px solid grey; background-color: white;}
-ul.horizontal li li {display: block; }
-    
 
 
-ul.vertical { white-space:nowrap; }
-ul.vertical li {position:relative; display:block;}
-ul.vertical li a {text-decoration:none; display:block;}
 
-ul.vertical li ul { display:none; position:absolute; z-index:999; right: 100%; top: -100%; } 
-ul.vertical li:hover ul { display:block; border: 5px solid grey; background-color: white; } 
-ul.vertical li li { display: block; }
 
-#legal li {display: inline-block; }
+
+
+
+
+
+
+
+
+
 
 
 

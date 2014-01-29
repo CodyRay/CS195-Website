@@ -36,6 +36,7 @@
             <nav id="skip">
                 <ul>
                     <li><a href="#content" title="Skip To Content">&darr;</a></li>
+                    <li><a href="#" onclick="window.print(); return false;" title="Opens the print dialog box.">Print</a></li>
                 </ul> 
             </nav>
             <header>
