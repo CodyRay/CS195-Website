@@ -5,7 +5,7 @@
                 </section>
             <?php endif; ?>
             </div>
-            <footer class="margin-sides pad-sides pad-tb">
+            <footer class="margin-sides pad-tb">
                 <nav id="legal">
                     <ul class="horizontal">
                         <li><?php echo 'Updated ' . date('F j, Y',filemtime($_SERVER['SCRIPT_FILENAME'])) ?></li>

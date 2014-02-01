@@ -196,13 +196,22 @@ textarea {
     text-shadow: 2px 1px 3px rgba(4,33,72,.5);
 }
 
+.un-transform /* Do the opposite*/
+{
+    -moz-transform: rotate(-3deg) skewX(-3deg);
+    -webkit-transform: rotate(-3deg) skewX(-3deg);
+    -o-transform: rotate(-3deg) skewX(-3deg);
+    -ms-transform: rotate(-3deg) skewX(-3deg);
+    transform: rotate(-3deg) skewX(-3deg);
+}     
+
 .transform /* Skew it parallelogram*/
 {
-    -moz-transform: rotate(5deg) skewX(5deg);
-    -webkit-transform: rotate(5deg) skewX(5deg);
-    -o-transform: rotate(5deg) skewX(5deg);
-    -ms-transform: rotate(5deg) skewX(5deg);
-    transform: rotate(5deg) skewX(5deg);
+    -moz-transform: rotate(3deg) skewX(3deg);
+    -webkit-transform: rotate(3deg) skewX(3deg);
+    -o-transform: rotate(3deg) skewX(3deg);
+    -ms-transform: rotate(3deg) skewX(3deg);
+    transform: rotate(3deg) skewX(3deg);
 }     
 
 .gradient 
@@ -227,11 +236,11 @@ textarea {
 
 .transition 
 {
-     -webkit-transition: all 500ms linear;
-     -moz-transition: all 500ms linear;
-     -ms-transition: all 500ms linear;
-     -o-transition: all 500ms linear;
-     transition: all 500ms linear; 
+     -webkit-transition: all 250ms ease-out;
+     -moz-transition: all 250ms ease-out;
+     -ms-transition: all 250ms ease-out;
+     -o-transition: all 250ms ease-out;
+     transition: all 250ms ease-out; 
 }
 
 /*Padding Classes For more flexible changes*/
@@ -257,31 +266,31 @@ a {
     -webkit-border-radius: 5px 5px 0px 0px; 
     border-radius: 5px 5px 0px 0px;
     /*enable transitions for all hyperlinks*/
-    -webkit-transition: all 500ms linear;
-    -moz-transition: all 500ms linear;
-    -ms-transition: all 500ms linear;
-    -o-transition: all 500ms linear;
-    transition: all 500ms linear; 
+    -webkit-transition: all 250ms ease-out;
+    -moz-transition: all 250ms ease-out;
+    -ms-transition: all 250ms ease-out;
+    -o-transition: all 250ms ease-out;
+    transition: all 250ms ease-out; 
 }
 a:link {color:rgba(4,33,72,1);} /*Dark Blue*/
 a:visited {color:rgba(4,33,72,1);} /*Dark Blue*/  
 a:active, nav a.current { /* On Hover change the Background to yellow and soften the borders*/
     background-color: rgba(166,42,1,.75); 
-    -webkit-box-shadow: 0 0 3px 3px rgba(166,42,1,.75);
-    box-shadow: 0 0 3px 3px rgba(166,42,1,.75);
+    -webkit-box-shadow: 0 0 2px 2px rgba(166,42,1,.75);
+    box-shadow: 0 0 2px 2px rgba(166,42,1,.75);
     color:rgba(4,33,72,1);
 }
 a:hover { /* On Hover change the Background to yellow and soften the borders*/
     background-color: rgba(233,129,1,.75); 
-    -webkit-box-shadow: 0 0 3px 3px rgba(233,129,1,.75);
-    box-shadow: 0 0 3px 3px rgba(233,129,1,.75);
+    -webkit-box-shadow: 0 0 2px 2px rgba(233,129,1,.75);
+    box-shadow: 0 0 2px 2px rgba(233,129,1,.75);
     color: rgba(166,42,1,1);
 }
 
 a:focus { /* Same thing as hover but add a bounding box */      
     background-color: rgba(233,129,1,.75); 
-    -webkit-box-shadow: 0 0 3px 3px rgba(233,129,1,.75);
-    box-shadow: 0 0 3px 3px rgba(233,129,1,.75);
+    -webkit-box-shadow: 0 0 2px 2px rgba(233,129,1,.75);
+    box-shadow: 0 0 2px 2px rgba(233,129,1,.75);
     outline:2px dotted rgba(166,42,1,.5 );
 }
 
@@ -337,8 +346,7 @@ nav#main li, nav#tools li, nav#skip li {
     padding: 3px;
 }
 /*Manage Spacing for the Groups of links in Mobile View*/
-nav ul {padding: 0 20px; margin: 0;}
-
+nav ul {padding: 0 20px; }
 /*Make Skip Top Menu Horizontal */
 #skip ul, #skip li {padding: 0; margin: 0;}
 #skip li {width: 50%;}
@@ -499,7 +507,6 @@ nav ul {padding: 0 20px; margin: 0;}
 
 
 
-/*m_obile
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -607,7 +614,7 @@ nav ul {padding: 0 20px; margin: 0;}
    Modify as content requires.
    ========================================================================== */
 /*desktop desktop */
-@media only screen and (min-width: 35em) {
+@media only screen and (min-width: 50em) {
     /* Style adjustments for viewports that meet the condition }*/
 
 section#leftcolumn
@@ -641,6 +648,8 @@ footer
 {
     clear: both; /*Has to do with columns*/
 }
+
+
 h1, h2, h3, h4, h5, h6 {
     text-align: left;
 }
@@ -666,12 +675,16 @@ ul .horizontal li { display: -moz-inline-stack; display: inline-block; zoom: 1; 
 /*Slide Out Menus*/
 ul.horizontal li ul 
 { 
-    display: none; 
+    /*display: none;*/
     position: absolute; 
     top: 100%;
     z-index: 111;
+    /* http://stackoverflow.com/questions/3331353/transitions-on-the-display-property
+     * Transparent Fade Effect*/
+    visibility: hidden;
+    opacity: 0;
 }
-ul.horizontal li:hover ul { display: block;}
+ul.horizontal li:hover ul {/* display: block;*/ visibility: visible; opacity: 1; }
 ul.horizontal li li {display: block; }
     
 /*************************************************************************
@@ -685,18 +698,22 @@ ul.vertical li a {text-decoration:none; display:block;}
 /*Slide Out Menues*/
 ul.vertical li ul 
 { 
-    display:none; 
+    /*display:none;*/ 
     position:absolute; 
     z-index:111; 
     right: 100%; 
     top: -100%;
+    /* http://stackoverflow.com/questions/3331353/transitions-on-the-display-property
+     * Transparent Fade Effect*/
+    visibility: hidden;
+    opacity: 0;
 } 
-ul.vertical li:hover ul { display:block; } 
+ul.vertical li:hover ul { /* display: block;*/ visibility: visible; opacity: 1; } 
 ul.vertical li li { display: block; }
 
 }
 
-
+footer li {padding: 0 5px;}
 
 
 
