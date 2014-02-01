@@ -95,79 +95,411 @@ textarea {
 
 /* ==========================================================================
    Author's custom styles
+   m_obile
    ========================================================================== */
+.corners  /*border radius*/
+{
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+}
+
+.boxshadows 
+{
+    /*Default Text Color Shadow */
+    -webkit-box-shadow: 0 0 20px 3px rgba(68,68,68,.5);
+    box-shadow: 0 0 20px 3px rgba(68,68,68,.5);
+}
+
+.boxshadows.red
+{
+    /*Red: Brown Orange Shadow*/
+    -webkit-box-shadow: 0 0 20px 3px rgba(166,42,1,.5);
+    box-shadow: 0 0 20px 3px rgba(166,42,1,.5);
+}
+
+.boxshadows.orange
+{
+    /*Orange: Orange Accent Color Shadow*/
+    -webkit-box-shadow: 0 0 20px 3px rgba(190,80,1,.5);
+    box-shadow: 0 0 20px 3px rgba(190,80,1,.5);
+}
+
+.boxshadows.yellow
+{
+    /*Yellow: Yellow Orange Color Shadow*/
+    -webkit-box-shadow: 0 0 20px 3px rgba(233,129,1,.5);
+    box-shadow: 0 0 20px 3px rgba(233,129,1,.5);
+}
+
+.boxshadows.dark-blue
+{
+    /*Dark-Blue Hyperlink Color Shadow*/
+    -webkit-box-shadow: 0 0 20px 3px rgba(4,33,72,.5);
+    box-shadow: 0 0 20px 3px rgba(4,33,72,.5);
+}
+
+#container.boxshadows
+{
+    /*Make the Box Shadow for the Container biger*/
+    /*Use the Emphasis Text Colour */
+    -webkit-box-shadow: 0 0 20px 7px rgba(153,153,153,.5);
+    box-shadow: 0 0 20px 7px rgba(153,153,153,.5);
+}
+
+.background 
+{
+    background-color: rgba(255,255,255,.9);
+}
+
+.background.red
+{
+    background-color: rgba(166,42,1,.9);
+}
+
+.background.orange
+{
+    background-color: rgba(190,80,1,.9);
+}
+
+.background.yellow
+{
+    background-color: rgba(233,129,1,.9);
+}
+
+.background.dark-blue
+{
+    background-color: rgba(4,33,72,.9);
+}
+
+.textshadows 
+{
+    text-shadow: 2px 1px 3px rgba(68,68,68,.5);
+}
+
+.textshadows.red
+{
+    text-shadow: 2px 1px 3px rgba(166,42,1,.5);
+}
+
+.textshadows.orange 
+{
+    text-shadow: 2px 1px 3px rgba(190,80,1,.5);
+}
+
+.textshadows.yellow
+{
+    text-shadow: 2px 1px 3px rgba(233,129,1,.5);
+}
+
+.textshadows.dark-blue
+{
+    text-shadow: 2px 1px 3px rgba(4,33,72,.5);
+}
+
+.un-transform /* Do the opposite*/
+{
+    -moz-transform: rotate(-3deg) skewX(-3deg);
+    -webkit-transform: rotate(-3deg) skewX(-3deg);
+    -o-transform: rotate(-3deg) skewX(-3deg);
+    -ms-transform: rotate(-3deg) skewX(-3deg);
+    transform: rotate(-3deg) skewX(-3deg);
+}     
+
+.transform /* Skew it parallelogram*/
+{
+    -moz-transform: rotate(3deg) skewX(3deg);
+    -webkit-transform: rotate(3deg) skewX(3deg);
+    -o-transform: rotate(3deg) skewX(3deg);
+    -ms-transform: rotate(3deg) skewX(3deg);
+    transform: rotate(3deg) skewX(3deg);
+}     
+
+.gradient 
+{
+    background: rgb(104,151,182); /* Old browsers */
+
+    background: -moz-linear-gradient(left,  rgba(104,151,182,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(104,151,182,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+
+    background: -webkit-linear-gradient(left,  rgba(104,151,182,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+
+    background: -o-linear-gradient(left,  rgba(104,151,182,1) 0%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+
+    background: -ms-linear-gradient(left,  rgba(104,151,182,1) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
+
+    background: linear-gradient(to right,  rgba(104,151,182,1) 0%,rgba(255,255,255,0) 100%); /* W3C */
+
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6897b6', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+
+}
+
+.transition 
+{
+     -webkit-transition: all 250ms ease-out;
+     -moz-transition: all 250ms ease-out;
+     -ms-transition: all 250ms ease-out;
+     -o-transition: all 250ms ease-out;
+     transition: all 250ms ease-out; 
+}
+
+/*Padding Classes For more flexible changes*/
+.pad-tb {padding-top: 10px; padding-bottom: 10px;}
+.pad-sides {padding-left: 20px; padding-right: 20px;}
+
+.margin-tb {margin-top: 10px; margin-bottom: 10px;}
+.margin-sides {margin-left: 20px; margin-right: 20px;}
+
+
+/* 
+ * http://www.paulirish.com/2012/box-sizing-border-box-ftw/ 
+ * apply a natural box layout model to all elements 
+ */
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    border-bottom:2px dotted rgba(166,42,1,.5 );/*Red*/ 
+    /*round the top corners on all hyperlinks*/
+    -webkit-border-radius: 5px 5px 0px 0px; 
+    border-radius: 5px 5px 0px 0px;
+    /*enable transitions for all hyperlinks*/
+    -webkit-transition: all 250ms ease-out;
+    -moz-transition: all 250ms ease-out;
+    -ms-transition: all 250ms ease-out;
+    -o-transition: all 250ms ease-out;
+    transition: all 250ms ease-out; 
+}
+a:link {color:rgba(4,33,72,1);} /*Dark Blue*/
+a:visited {color:rgba(4,33,72,1);} /*Dark Blue*/  
+a:active, nav a.current { /* On Hover change the Background to yellow and soften the borders*/
+    background-color: rgba(166,42,1,.75); 
+    -webkit-box-shadow: 0 0 2px 2px rgba(166,42,1,.75);
+    box-shadow: 0 0 2px 2px rgba(166,42,1,.75);
+    color:rgba(4,33,72,1);
+}
+a:hover { /* On Hover change the Background to yellow and soften the borders*/
+    background-color: rgba(233,129,1,.75); 
+    -webkit-box-shadow: 0 0 2px 2px rgba(233,129,1,.75);
+    box-shadow: 0 0 2px 2px rgba(233,129,1,.75);
+    color: rgba(166,42,1,1);
+}
+
+a:focus { /* Same thing as hover but add a bounding box */      
+    background-color: rgba(233,129,1,.75); 
+    -webkit-box-shadow: 0 0 2px 2px rgba(233,129,1,.75);
+    box-shadow: 0 0 2px 2px rgba(233,129,1,.75);
+    outline:2px dotted rgba(166,42,1,.5 );
+}
+
+/*Give the Container a little bit of Space on the sides and bottom*/
+html { padding: 0 10px 25px 10px; }
 
 body {
     font-family: 'Lato', sans-serif, helvetica, sans;
     font-size: 16px;
     line-height: 1.6em;
-    color: #444444;
-    background-color: #F3F3F3;
+    color: rgba(68,68,68,1);
+    background-color: rgba(243,243,243,1);
 }
-
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Signika', 'Lato', sans-serif, helvetica, sans;
+    font-weight: 700;
+    color: rgba(166,42,1,1);
+    line-height: 1.2em;
+    text-align: center;
+}
 div#container {
-    margin: 0 auto; /*Centers page*/
-    padding: 0;
-    max-width: 1080px;
-    min-width: 320px;
-    border-width: 0 5px;
-    border-color: rgba(166, 42, 1, .5);
-    border-style: solid;
-
+    margin: 0 auto;
+    max-width:1080px; 
+    min-width:320px;/*Default 320px*/ 
+    background-color: rgba(255,255,255,.9);
+    /*Round Bottom Corners*/
+    -webkit-border-radius: 0 0 9px 9px;
+    border-radius: 0 0 9px 9px;
 }
 
-section#content {
-    width: 50%;  /* Change for a 3-column layout. */ 
-    margin:0 auto;
-    padding:10px; 
-    min-height:300px;
-    border-width: 5px 5px 0 5px;
-    border-color: rgba(190, 80, 1, .5);
-    border-style: solid;
-    background-color: rgb(255, 255, 255);
-}
+/*Goes around sidebars and content to give them space from the sides*/
+div#wrapper {padding: 20px;}
 
-header {
-    margin: 0;
-    border: 5px solid #DF8101;
-    padding: 0;
+header, footer, nav#tools, nav#main, nav#skip, nav#legal, section#content
+{
+    /*margin: 0;
+    padding: 0;*/
     height: auto;
     width: auto;
 }
+footer { border-top: 2px solid rgba(153, 153, 153,.75); }
 
-footer {
-    margin: 0;
-    border: 5px solid #DF8101;
-    padding: 0;
-    height: auto;
-    width: auto;
-    clear: both;
+/*The following have custom styles for the desktop version*/
+/*These reset the above hyperlink styles for mobile*/
+nav#main a, nav#tools a, nav#skip a {
+    font-weight: bolder;
+    /*Reset Undesirable Changes for navigation links */
+     border: 0;
+     -webkit-border-radius: 0px 0px 0px 0px; 
+     border-radius: 0px 0px 0px 0px; 
 }
-
-/* Navigation Menues */
-
-nav#tools, nav#skip {
-    margin: 0;
-    border: 5px solid #DF8101;
-    padding: 0;
-    height: auto;
-    width: auto;
+nav#main li, nav#tools li, nav#skip li {
+    padding: 3px;
 }
+/*Manage Spacing for the Groups of links in Mobile View*/
+nav ul {padding: 0 20px; }
+/*Make Skip Top Menu Horizontal */
+#skip ul, #skip li {padding: 0; margin: 0;}
+#skip li {width: 50%;}
+#skip a {padding: 5px; width: 100%;}
+#skip ul.horizontal { white-space: nowrap; text-align: center; }
+#skip ul.horizontal li { position: relative; display: inline-block; vertical-align: top; }
+#skip ul.horizontal li a { display: inline-block; text-decoration: none; }
 
-nav#leagal {
-    margin: 0;
-    padding: 0;
-    height: auto;
-    width: auto;
-}
 
-nav#main {
-    margin: 0;
-    border: 5px solid #DF8101;
-    padding: 0;
-    height: auto;
-    width: auto;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -281,25 +613,327 @@ nav#main {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+/*desktop desktop */
+@media only screen and (min-width: 50em) {
+    /* Style adjustments for viewports that meet the condition }*/
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-nav#leftcolumn {
-   float:left; 
-   width:20%; 
-   margin:0; 
-   border:1px solid #ccc; 
-   padding:0; 
+section#leftcolumn
+{
+    float: left;
 }
-nav#rightcolumn {
-   float:right; 
-   width:20%; 
-    height: 100%;
-   margin:0; 
-   border:1px solid #ccc; 
-   padding:0; 
+
+section#rightcolumn
+{
+    float: right;
 }
+
+section#leftcolumn, section#rightcolumn
+{
+    width: 225px;
+    margin: 5px;
 }
+/*Uncomment to make sidebars sticky
+section#leftcolumn nav, section#rightcolumn nav
+{
+    position: fixed;
+}
+*/
+section#content
+{
+    width: auto;
+    margin-right: 225px;
+}
+
+footer
+{
+    clear: both; /*Has to do with columns*/
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: left;
+}
+
+nav ul, nav li {padding: 0; margin: 0;}
+nav#main a, nav#tools a, nav#skip a {
+    padding: 5px 20px;/*Padding gives items size*/ 
+    margin: 0;
+}
+
+/*Goes around sidebars and content to give them space from the sides*/
+div#wrapper {padding: 50px 20px 0 30px;}
+
+/*************************************************************************
+ * Horizontal Menus
+ */
+/*Make Menus Horizontal */
+ul.horizontal { white-space: nowrap; text-align: center;}
+ul.horizontal li { position: relative; display: inline-block; vertical-align: top; }
+ul.horizontal li a { display: block; text-decoration: none; }
+/*IE FIX/
+ul .horizontal li { display: -moz-inline-stack; display: inline-block; zoom: 1; *display: inline; position: relative; }
+/*Slide Out Menus*/
+ul.horizontal li ul 
+{ 
+    /*display: none;*/
+    position: absolute; 
+    top: 100%;
+    z-index: 111;
+    /* http://stackoverflow.com/questions/3331353/transitions-on-the-display-property
+     * Transparent Fade Effect*/
+    visibility: hidden;
+    opacity: 0;
+}
+ul.horizontal li:hover ul {/* display: block;*/ visibility: visible; opacity: 1; }
+ul.horizontal li li {display: block; }
+    
+/*************************************************************************
+ * Vertical Menus
+ */
+/*Make Menus Vertical */
+
+ul.vertical { white-space:nowrap; }
+ul.vertical li {position:relative; display:block;}
+ul.vertical li a {text-decoration:none; display:block;}
+/*Slide Out Menues*/
+ul.vertical li ul 
+{ 
+    /*display:none;*/ 
+    position:absolute; 
+    z-index:111; 
+    right: 100%; 
+    top: -100%;
+    /* http://stackoverflow.com/questions/3331353/transitions-on-the-display-property
+     * Transparent Fade Effect*/
+    visibility: hidden;
+    opacity: 0;
+} 
+ul.vertical li:hover ul { /* display: block;*/ visibility: visible; opacity: 1; } 
+ul.vertical li li { display: block; }
+
+}
+
+footer li {padding: 0 5px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media print,
        (-o-min-device-pixel-ratio: 5/4),
@@ -379,3 +1013,8 @@ nav#rightcolumn {
         page-break-after: avoid;
     }
 }
+
+
+
+
+
