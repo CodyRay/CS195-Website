@@ -95,8 +95,8 @@ textarea {
 
 /* ==========================================================================
    Author's custom styles
+   m_obile
    ========================================================================== */
-
 /* 
  * http://www.paulirish.com/2012/box-sizing-border-box-ftw/ 
  * apply a natural box layout model to all elements 
@@ -105,13 +105,29 @@ textarea {
   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
 }
 
-a {text-decoration: none;}
+a {
+    text-decoration: none;
+     padding: 0 9px; 
+     border-bottom:2px dotted rgba(166, 42, 1, .5 ); 
+     -webkit-border-radius: 5px 5px 0px 0px; 
+     border-radius: 5px 5px 0px 0px;
+     -webkit-transition: all 500ms linear;
+     -moz-transition: all 500ms linear;
+     -ms-transition: all 500ms linear;
+     -o-transition: all 500ms linear;
+     transition: all 500ms linear; 
+}
 a:link {color:#042148;}
 a:visited {color:#042148;}
-a:hover {color:#A62A01; background-color: #ADC6D6;}
+a:hover {color:#A62A01; background-color: rgba(104, 151, 182, .1);
+    -webkit-box-shadow: 0 0 3px 3px rgba(104, 151, 182, .1);
+    box-shadow: 0 0 3px 3px rgba(104, 151, 182, .1);
+}
 a:focus {color: #A62A01; outline:2px dotted #A62A01;}
 a:active {color:#A62A01;}
 a.current {color:#A62A01;}
+
+header a { padding: 0;}
 
 /*CSS3 Generator White Text Shadow*/
 .textshadows {text-shadow: 0 0 10px #FFFFFF;}
@@ -119,11 +135,23 @@ a.current {color:#A62A01;}
 .boxshadows 
 {
     /*CSS3 Generator Box Shadow*/
-    -webkit-box-shadow: 0 0 40px 20px rgba(128,128,128,.3);
-    box-shadow: 0 0 40px 20px rgba(128,128,128,.3);
+    -webkit-box-shadow: 0 0 20px 10px rgba(128,128,128,.3);
+    box-shadow: 0 0 20px 10px rgba(128,128,128,.3);
 }
-
+.boxshadows-light 
+{
+    /*I want these to default to white*/
+    background-color: white;
+    /*CSS3 Generator Box Shadow*/
+    -webkit-box-shadow: 0 0 5px 1px rgba(4, 33, 72, .3);
+    box-shadow: 0 0 5px 1px rgba(4, 33, 72, .3);
+}
+.pad {padding: 10px;}
+.background.orange {background-color: #DF8101;}
+.background.light-blue {background-color: #6897B6;}
 .roundcorners { -webkit-border-radius: 5px 5px 5px 5px; border-radius: 5px 5px 5px 5px; }
+
+html { padding: 0 10px 25px 10px; }
 
 body {
     font-family: 'Lato', sans-serif, helvetica, sans;
@@ -135,7 +163,7 @@ body {
 
 div#container {
     margin: 0 auto;
-    padding: 0 20px 20px 20px;
+    /*padding: 0 20px 20px 20px;*/
     max-width:1080px; 
     min-width:320px;/*Default 320px*/ 
     background-color: #F3F3F3;
@@ -149,6 +177,7 @@ div#container {
     -webkit-border-radius: 0 0 9px 9px;
     border-radius: 0 0 9px 9px;
 }
+div#wrapper {padding: 0 20px;}
 
 header, footer, nav#tools, nav#main, nav#skip, nav#legal
 {
@@ -158,33 +187,33 @@ header, footer, nav#tools, nav#main, nav#skip, nav#legal
     width: auto;
     /*border: 1px dashed black;*/
 }
+header { z-index: 222; }
+footer {margin: 0 20px; padding-bottom: 20px; border-width: 2px 0 0 0; border-style: solid; border-color: #DADADA; }
 
-footer { border-width: 2px 0 0 0; border-style: solid; border-color: #DADADA; }
-
-
+/*The following have custom styles for the desktop version*/
+/*These reset the above hyperlink styles for mobile*/
+nav a {
+     border: 0;
+     -webkit-border-radius: 0px 0px 0px 0px; 
+     border-radius: 0px 0px 0px 0px; 
+}
 nav ul {padding: 10px 10px 10px 40px; margin: 0;}
 
 
 
-/*The following have custom styles for the desktop version*/
 
 
-section#leftcolumn, section#rightcolumn
-{
-    margin: 50px 0;
-    padding: 0;
-    background-color: white;
-
-}
 
 section#content
 {
     margin: 0;
-    padding: 10px;
+    padding: 0 10px;
 }
 /*Make Skip Top Menu Horizontal */
-#skip ul, #skip li {padding: 5px 20px;}
-#skip ul.horizontal { white-space: nowrap; }
+#skip ul, #skip li {padding: 0; margin: 0;}
+#skip li {width: 50%;}
+#skip a {padding: 5px 20px; width: 100%;}
+#skip ul.horizontal { white-space: nowrap; text-align: center; }
 #skip ul.horizontal li { position: relative; display: inline-block; vertical-align: top; }
 #skip ul.horizontal li a { display: inline-block; text-decoration: none; }
 /*Hacks for IE: ul .horizontal li { display: -moz-inline-stack; display: inline-block; zoom: 1; *display: inline; position: relative; }*/
@@ -220,8 +249,7 @@ section#content
 
 
 
-
-
+/*m_obile
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -328,7 +356,7 @@ section#content
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-
+/*des_ktop desktop */
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
 
@@ -345,8 +373,14 @@ section#rightcolumn
 section#leftcolumn, section#rightcolumn
 {
     width: 225px;
+    margin: 5px;
 }
-
+/*Uncomment to make sidebars sticky
+section#leftcolumn nav, section#rightcolumn nav
+{
+    position: fixed;
+}
+*/
 section#content
 {
     width: auto;
@@ -358,11 +392,13 @@ footer
     clear: both; /*Has to do with columns*/
 }
 
-nav ul, nav li {padding: 5px; margin: 0;}
+nav ul, nav li {padding: 0; margin: 0;}
+nav a {padding: 5px 20px; margin: 0;}
+footer a {padding: 0;}
 /*Make Menus Horizontal */
 ul.horizontal { white-space: nowrap; }
 ul.horizontal li { position: relative; display: inline-block; vertical-align: top; }
-ul.horizontal li a { display: inline-block; text-decoration: none; }
+ul.horizontal li a { display: block; text-decoration: none; }
 /*Hacks for IE: ul .horizontal li { display: -moz-inline-stack; display: inline-block; zoom: 1; *display: inline; position: relative; }*/
 
 /*Slide Out Menus*/
@@ -371,22 +407,17 @@ ul.horizontal li ul
     display: none; 
     position: absolute; 
     top: 100%;
-    z-index: 999;
+    z-index: 111;
     margin: 0;
     padding: 0;
 }
-/*Shared Child Menu Styles*/
-ul.horizontal li ul, ul.vertical li ul
+ul.horizontal li:hover ul, ul.vertical li:hover ul
 { 
-    background-color: white; 
-    -webkit-box-shadow: 0 0 40px 20px rgba(128,128,128,.3);
-    box-shadow: 0 0 40px 20px rgba(128,128,128,.3);
-    -webkit-border-radius: 5px 5px 5px 5px; 
-    border-radius: 5px 5px 5px 5px; 
+    background-color: rgba(255,255,255,1); 
 }
 
 
-ul.horizontal li:hover ul { display: block; }
+ul.horizontal li:hover ul { display: block;}
 ul.horizontal li li {display: block; }
     
 
@@ -395,7 +426,7 @@ ul.vertical { white-space:nowrap; }
 ul.vertical li {position:relative; display:block;}
 ul.vertical li a {text-decoration:none; display:block;}
 
-ul.vertical li ul { display:none; position:absolute; z-index:999; right: 100%; top: -100%; } 
+ul.vertical li ul { display:none; position:absolute; z-index:111; right: 100%; top: -100%; margin: 0 ;} 
 ul.vertical li:hover ul { display:block; } 
 ul.vertical li li { display: block; }
 

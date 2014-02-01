@@ -4,6 +4,7 @@
                     <p>HELLO WORLD</p>
                 </section>
             <?php endif; ?>
+            </div>
             <footer>
                 <nav id="legal">
                     <ul class="horizontal">
