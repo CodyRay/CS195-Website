@@ -133,7 +133,9 @@ textarea {
 
 .boxshadows.dark-blue
 {
-    background-color: rgba(4,33,72,.5);
+    /*Dark-Blue Hyperlink Color Shadow*/
+    -webkit-box-shadow: 0 0 20px 3px rgba(4,33,72,.5);
+    box-shadow: 0 0 20px 3px rgba(4,33,72,.5);
 }
 
 #container.boxshadows
@@ -146,27 +148,27 @@ textarea {
 
 .background 
 {
-    background-color: rgba(68,68,68,.5);
+    background-color: rgba(255,255,255,.9);
 }
 
 .background.red
 {
-    background-color: rgba(166,42,1,.5);
+    background-color: rgba(166,42,1,.9);
 }
 
 .background.orange
 {
-    background-color: rgba(190,80,1,.5);
+    background-color: rgba(190,80,1,.9);
 }
 
 .background.yellow
 {
-    background-color: rgba(233,129,1,.5);
+    background-color: rgba(233,129,1,.9);
 }
 
 .background.dark-blue
 {
-    background-color: rgba(4,33,72,.5);
+    background-color: rgba(4,33,72,.9);
 }
 
 .textshadows 
@@ -233,10 +235,10 @@ textarea {
 }
 
 /*Padding Classes For more flexible changes*/
-.pad-tb {padding-top: 20px; padding-bottom: 20px;}
+.pad-tb {padding-top: 10px; padding-bottom: 10px;}
 .pad-sides {padding-left: 20px; padding-right: 20px;}
 
-.margin-tb {margin-top: 20px; margin-bottom: 20px;}
+.margin-tb {margin-top: 10px; margin-bottom: 10px;}
 .margin-sides {margin-left: 20px; margin-right: 20px;}
 
 
@@ -263,11 +265,19 @@ a {
 }
 a:link {color:rgba(4,33,72,1);} /*Dark Blue*/
 a:visited {color:rgba(4,33,72,1);} /*Dark Blue*/  
-a:hover, a:active, a.current { /* On Hover change the Background to yellow and soften the borders*/
+a:active, nav a.current { /* On Hover change the Background to yellow and soften the borders*/
+    background-color: rgba(166,42,1,.75); 
+    -webkit-box-shadow: 0 0 3px 3px rgba(166,42,1,.75);
+    box-shadow: 0 0 3px 3px rgba(166,42,1,.75);
+    color:rgba(4,33,72,1);
+}
+a:hover { /* On Hover change the Background to yellow and soften the borders*/
     background-color: rgba(233,129,1,.75); 
     -webkit-box-shadow: 0 0 3px 3px rgba(233,129,1,.75);
     box-shadow: 0 0 3px 3px rgba(233,129,1,.75);
+    color: rgba(166,42,1,1);
 }
+
 a:focus { /* Same thing as hover but add a bounding box */      
     background-color: rgba(233,129,1,.75); 
     -webkit-box-shadow: 0 0 3px 3px rgba(233,129,1,.75);
@@ -285,7 +295,13 @@ body {
     color: rgba(68,68,68,1);
     background-color: rgba(243,243,243,1);
 }
-
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Signika', 'Lato', sans-serif, helvetica, sans;
+    font-weight: 700;
+    color: rgba(166,42,1,1);
+    line-height: 1.2em;
+    text-align: center;
+}
 div#container {
     margin: 0 auto;
     max-width:1080px; 
@@ -295,13 +311,14 @@ div#container {
     -webkit-border-radius: 0 0 9px 9px;
     border-radius: 0 0 9px 9px;
 }
+
 /*Goes around sidebars and content to give them space from the sides*/
-div#wrapper {padding: 0 20px;}
+div#wrapper {padding: 20px;}
 
 header, footer, nav#tools, nav#main, nav#skip, nav#legal, section#content
 {
-    margin: 0;
-    padding: 0;
+    /*margin: 0;
+    padding: 0;*/
     height: auto;
     width: auto;
 }
@@ -310,10 +327,14 @@ footer { border-top: 2px solid rgba(153, 153, 153,.75); }
 /*The following have custom styles for the desktop version*/
 /*These reset the above hyperlink styles for mobile*/
 nav#main a, nav#tools a, nav#skip a {
+    font-weight: bolder;
     /*Reset Undesirable Changes for navigation links */
      border: 0;
      -webkit-border-radius: 0px 0px 0px 0px; 
      border-radius: 0px 0px 0px 0px; 
+}
+nav#main li, nav#tools li, nav#skip li {
+    padding: 3px;
 }
 /*Manage Spacing for the Groups of links in Mobile View*/
 nav ul {padding: 0 20px; margin: 0;}
@@ -321,7 +342,7 @@ nav ul {padding: 0 20px; margin: 0;}
 /*Make Skip Top Menu Horizontal */
 #skip ul, #skip li {padding: 0; margin: 0;}
 #skip li {width: 50%;}
-#skip a {padding: 5px;}
+#skip a {padding: 5px; width: 100%;}
 #skip ul.horizontal { white-space: nowrap; text-align: center; }
 #skip ul.horizontal li { position: relative; display: inline-block; vertical-align: top; }
 #skip ul.horizontal li a { display: inline-block; text-decoration: none; }
@@ -620,9 +641,18 @@ footer
 {
     clear: both; /*Has to do with columns*/
 }
+h1, h2, h3, h4, h5, h6 {
+    text-align: left;
+}
 
 nav ul, nav li {padding: 0; margin: 0;}
-nav a {padding: 5px 20px;/*Padding gives items size*/ margin: 0;}
+nav#main a, nav#tools a, nav#skip a {
+    padding: 5px 20px;/*Padding gives items size*/ 
+    margin: 0;
+}
+
+/*Goes around sidebars and content to give them space from the sides*/
+div#wrapper {padding: 50px 20px 0 30px;}
 
 /*************************************************************************
  * Horizontal Menus
@@ -631,6 +661,7 @@ nav a {padding: 5px 20px;/*Padding gives items size*/ margin: 0;}
 ul.horizontal { white-space: nowrap; text-align: center;}
 ul.horizontal li { position: relative; display: inline-block; vertical-align: top; }
 ul.horizontal li a { display: block; text-decoration: none; }
+/*IE FIX/
 ul .horizontal li { display: -moz-inline-stack; display: inline-block; zoom: 1; *display: inline; position: relative; }
 /*Slide Out Menus*/
 ul.horizontal li ul 

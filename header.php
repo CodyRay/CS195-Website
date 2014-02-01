@@ -29,27 +29,28 @@
         <link rel="stylesheet" href="<?php echo $sitepath; ?>css/main.css">
         <script src="<?php echo $sitepath; ?>js/vendor/modernizr-2.6.2.min.js"></script>
         <link href='http://fonts.googleapis.com/css?family=Lato:400,900' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Signika:400,700' rel='stylesheet' type='text/css'>
     </head>
     <body>
         <div id="container" class="boxshadows">
             <!--[if lt IE 7]>
                 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
             <![endif]-->
-            <nav id="skip">
+            <nav id="skip" class="gradient pad-sides">
                 <ul class="horizontal">
                     <li><a href="#content" title="Skip To Content"><i class="fa fa-fw fa-arrow-down fa-2x"></i></a></li>
                     <li><a href="#" onclick="window.print(); return false;" title="Opens the print dialog box."><i class="fa fa-fw fa-print fa-2x"></i></a></li>
                 </ul> 
             </nav>
-            <header class="boxshadows-light background light-blue pad">
+            <header class="gradient dark-blue pad-sides pad-tb">
                 <h1><a href="<?php echo $sitepath;?>"><?php echo $sitename; ?></a></h1>
                 <p><?php echo $sitedescription; ?></p>
             </header>
             <div>
-            <nav id="main" class=" boxshadows-light orange background">
+            <nav id="main" class=" boxshadows orange background">
                 <ul class="horizontal"> 
                     <li><a href="<?php echo $sitepath; ?>categories/nature/"><i class="fa fa-fw fa-globe"></i> Nature</a> 
-                    <ul class="roundcorners boxshadows-light"> 
+                    <ul class="corners boxshadows background pad-tb"> 
                         <li><a href="<?php echo $sitepath; ?>categories/nature/mountains.php">Mountains</a></li> 
                         <li><a href="<?php echo $sitepath; ?>categories/nature/trees.php">Trees</a></li> 
                         <li><a href="<?php echo $sitepath; ?>categories/nature/water.php">Water</a></li> 
@@ -63,10 +64,10 @@
             </div>
             <div id="wrapper">
             <section id="rightcolumn">
-                <nav id="tools" class="roundcorners boxshadows-light orange background">
+                <nav id="tools" class="corners boxshadows orange background pad-tb">
                     <ul class="vertical"> 
                         <li><a href="<?php echo $sitepath; ?>about/"><i class="fa fa-fw fa-user"></i> About Me</a> 
-                        <ul class="roundcorners boxshadows-light">
+                        <ul class="corners boxshadows background pad-tb">
                             <li><a href="<?php echo $sitepath; ?>about/contact.php">Contact Me</a></li> 
                             <li><a href="<?php echo $sitepath; ?>about/remove.php">Remove a Photo</a></li> 
                             <li><a href="<?php echo $sitepath; ?>about/share.php">Share This Site</a></li> 
