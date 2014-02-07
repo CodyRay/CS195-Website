@@ -12,7 +12,11 @@
                         <li><a href="<?php echo $sitepath; ?>about/contact.php">Contact Me</a></li>
                         <li>Epic Photography &copy; <?php print date('Y') ?> Cody Ray Freeman Hoeft.</li>
                         <li>Images are Property of their Respective Owners.</li>
-                        <li class="invisible-link"><a href="http://subtlepatterns.com/"><img src="<?php echo $sitepath ; ?>img/sp-logo.png" title="This Site Proudly Uses Subtle Patterns" alt="Subtle Patterns Logo"/></a></li>
+                        <li class="invisible-link">
+                        <a href="http://subtlepatterns.com/" target="_blank"><img src="<?php echo $sitepath ; ?>img/sp-logo.png" title="This Site Proudly Uses Subtle Patterns" alt="Subtle Patterns Logo"/></a>
+                        <a href="https://github.com/haroldhues/CS-161-Website" target="_blank"><img src="<?php echo $sitepath ; ?>img/github.png" title="Checkout the Source Code on GitHub" alt="OctoCat"/></a>
+                        <a href="http://html5boilerplate.com/" target="_blank"><img src="<?php echo $sitepath ; ?>img/boilerplate.png" title="This Site Built on HTML5 Boilerplate" alt="Boilerplate Logo"/></a>
+                        </li>
                     </ul>
                 </nav>
             </footer>

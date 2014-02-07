@@ -79,6 +79,10 @@
                         <li><a href="<?php echo $sitepath; ?>categories/"><i class="fa fa-fw fa-picture-o"></i> List Photo Categories</a></li> 
                     </ul>
                 </nav>
+                <aside class="yellow background pad-tb margin-tb fit-content">
+                    <img class="margin-half-sides margin-half-tb red boxshadows" src="<?php echo $sitepath ;?>img/yellowflower.jpg" alt="Yellow Flower on a Blue Sky" title="Ubuntu 10.04 Default Wallpaper &copy; Canonical">
+                    <img class="margin-half-sides margin-half-tb red boxshadows" src="<?php echo $sitepath ;?>img/7-nasaspacescapes.jpg" alt="Orion Nebula" title="NASA Spitzer Space Telescope &copy; NASA">
+                </aside>
             </section>
             <section id="content">
             <h1><?php print $pagetitle;?></h1>

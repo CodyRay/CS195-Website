@@ -218,6 +218,7 @@ textarea {
 .margin-half-tb {margin-top: 7px; margin-bottom: 7px;}
 .margin-half-sides {margin-left: 11px; margin-right: 11px;}
 
+.fit-content {width: 100%; text-align: center; vertical-align: middle;}
 /* 
  * http://www.paulirish.com/2012/box-sizing-border-box-ftw/ 
  * apply a natural box layout model to all elements 
@@ -616,7 +617,6 @@ section#rightcolumn
 section#leftcolumn, section#rightcolumn
 {
     width: 225px;
-    margin: 5px;
 }
 /*Uncomment to make sidebars sticky
 section#leftcolumn nav, section#rightcolumn nav
@@ -627,7 +627,7 @@ section#leftcolumn nav, section#rightcolumn nav
 section#content
 {
     width: auto;
-    margin-right: 225px;
+    margin-right: 245px;
 }
 
 footer
@@ -647,13 +647,13 @@ nav#main a, nav#tools a, nav#skip a {
 }
 
 /*Goes around sidebars and content to give them space from the sides*/
-div#wrapper {padding: 50px 20px 0 30px;}
+div#wrapper {padding: 30px 20px 0 20px;}
 
 /*************************************************************************
  * Horizontal Menus
  */
 /*Make Menus Horizontal */
-ul.horizontal { white-space: nowrap; text-align: center;}
+ul.horizontal { text-align: center;}
 ul.horizontal li { position: relative; display: inline-block; vertical-align: top; }
 ul.horizontal li a { display: block; text-decoration: none; }
 /*IE FIX/
@@ -699,7 +699,7 @@ ul.vertical li li { display: block; }
 
 
 footer li {padding: 0 5px;}
-
+nav#legal a { display: inline; }
 header {
     background:url("../img/paper-overlay.png") repeat center center, url("../img/creativecommonsuserlittle-mountain-5-pilot-rock-panorama-from-summit-lossy.jpg") no-repeat center 100%;
 }
