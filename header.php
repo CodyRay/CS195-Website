@@ -43,7 +43,7 @@
                 </ul> 
             </nav>
             <header class="pad-sides invisible-link">
-            <a class="none"href="<?php echo $sitepath;?>"><img src="<?php echo $sitepath; ?>img/epic-photography.png" alt="<?php echo $sitename; ?>" title="<?php echo $sitedescription; ?>"/></a>
+            <a class="none" href="<?php echo $sitepath;?>"><img src="<?php echo $sitepath; ?>img/epic-photography.png" alt="<?php echo $sitename; ?>" title="<?php echo $sitedescription; ?>"/></a>
             <!--
                 <h1><a href="<?php echo $sitepath;?>"><?php echo $sitename; ?></a></h1>
                 <p><?php echo $sitedescription; ?></p>

@@ -301,7 +301,9 @@ header, footer, nav#tools, nav#main, nav#skip, nav#legal, section#content
     height: auto;
     width: auto;
 }
-footer { border-top: 2px solid rgba(153, 153, 153,.50); }
+footer { 
+    border-top: 4px solid rgba(166, 1, 1, 1);
+    }
 
 
 header img {max-height: 100px; max-width: 100%;}
