@@ -15,12 +15,12 @@ button,
 input,
 select,
 textarea {
-    color: #222;
+    /* color: #222; */
 }
 
 html {
-    font-size: 1em;
-    line-height: 1.4;
+    /* font-size: 1em; */
+    /* line-height: 1.4; */
 }
 
 /*
@@ -196,51 +196,13 @@ textarea {
     text-shadow: 2px 1px 3px rgba(4,33,72,.5);
 }
 
-.un-transform /* Do the opposite*/
-{
-    -moz-transform: rotate(-3deg) skewX(-3deg);
-    -webkit-transform: rotate(-3deg) skewX(-3deg);
-    -o-transform: rotate(-3deg) skewX(-3deg);
-    -ms-transform: rotate(-3deg) skewX(-3deg);
-    transform: rotate(-3deg) skewX(-3deg);
-}     
-
-.transform /* Skew it parallelogram*/
-{
-    -moz-transform: rotate(3deg) skewX(3deg);
-    -webkit-transform: rotate(3deg) skewX(3deg);
-    -o-transform: rotate(3deg) skewX(3deg);
-    -ms-transform: rotate(3deg) skewX(3deg);
-    transform: rotate(3deg) skewX(3deg);
-}     
-
-.gradient 
-{
-    background: rgb(104,151,182); /* Old browsers */
-
-    background: -moz-linear-gradient(left,  rgba(104,151,182,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
-
-    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(104,151,182,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
-
-    background: -webkit-linear-gradient(left,  rgba(104,151,182,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
-
-    background: -o-linear-gradient(left,  rgba(104,151,182,1) 0%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
-
-    background: -ms-linear-gradient(left,  rgba(104,151,182,1) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
-
-    background: linear-gradient(to right,  rgba(104,151,182,1) 0%,rgba(255,255,255,0) 100%); /* W3C */
-
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6897b6', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
-
-}
-
 .transition 
 {
-     -webkit-transition: all 250ms ease-out;
-     -moz-transition: all 250ms ease-out;
-     -ms-transition: all 250ms ease-out;
-     -o-transition: all 250ms ease-out;
-     transition: all 250ms ease-out; 
+     -webkit-transition: all 190ms ease-out;
+     -moz-transition: all 190ms ease-out;
+     -ms-transition: all 190ms ease-out;
+     -o-transition: all 190ms ease-out;
+     transition: all 190ms ease-out; 
 }
 
 /*Padding Classes For more flexible changes*/
@@ -250,13 +212,20 @@ textarea {
 .margin-tb {margin-top: 10px; margin-bottom: 10px;}
 .margin-sides {margin-left: 20px; margin-right: 20px;}
 
+.pad-half-tb {padding-top: 7px; padding-bottom: 7px;}
+.pad-half-sides {padding-left: 11px; padding-right: 11px;}
+
+.margin-half-tb {margin-top: 7px; margin-bottom: 7px;}
+.margin-half-sides {margin-left: 11px; margin-right: 11px;}
 
 /* 
  * http://www.paulirish.com/2012/box-sizing-border-box-ftw/ 
  * apply a natural box layout model to all elements 
  */
 *, *:before, *:after {
-  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
 a {
@@ -266,38 +235,38 @@ a {
     -webkit-border-radius: 5px 5px 0px 0px; 
     border-radius: 5px 5px 0px 0px;
     /*enable transitions for all hyperlinks*/
-    -webkit-transition: all 250ms ease-out;
-    -moz-transition: all 250ms ease-out;
-    -ms-transition: all 250ms ease-out;
-    -o-transition: all 250ms ease-out;
-    transition: all 250ms ease-out; 
+    -webkit-transition: all 100ms ease-out;
+    -moz-transition: all 100ms ease-out;
+    -ms-transition: all 100ms ease-out;
+    -o-transition: all 100ms ease-out;
+    transition: all 100ms ease-out; 
 }
-a:link {color:rgba(4,33,72,1);} /*Dark Blue*/
-a:visited {color:rgba(4,33,72,1);} /*Dark Blue*/  
-a:active, nav a.current { /* On Hover change the Background to yellow and soften the borders*/
-    background-color: rgba(166,42,1,.75); 
-    -webkit-box-shadow: 0 0 2px 2px rgba(166,42,1,.75);
-    box-shadow: 0 0 2px 2px rgba(166,42,1,.75);
-    color:rgba(4,33,72,1);
-}
-a:hover { /* On Hover change the Background to yellow and soften the borders*/
-    background-color: rgba(233,129,1,.75); 
-    -webkit-box-shadow: 0 0 2px 2px rgba(233,129,1,.75);
-    box-shadow: 0 0 2px 2px rgba(233,129,1,.75);
+a:link, a:visited {color:rgba(4,33,72,1);} /*Dark Blue*/  
+a:active, a:hover, a:focus { /* On Hover change the Background to yellow*/
+    background-color: rgba(233,129,1,.35); 
     color: rgba(166,42,1,1);
 }
 
 a:focus { /* Same thing as hover but add a bounding box */      
-    background-color: rgba(233,129,1,.75); 
-    -webkit-box-shadow: 0 0 2px 2px rgba(233,129,1,.75);
-    box-shadow: 0 0 2px 2px rgba(233,129,1,.75);
     outline:2px dotted rgba(166,42,1,.5 );
 }
 
-/*Give the Container a little bit of Space on the sides and bottom*/
-html { padding: 0 10px 25px 10px; }
+
+.invisible-link a, .invisible-link a:link, .invisible-link a:visited, .invisible-link a:active, .invisible-link a:hover, .invisible-link a:focus { 
+    background-color: inherit;
+    transition: none;
+    color: inherit;
+    border: 0; 
+    -webkit-border-radius: 0px 0px 0px 0px; 
+    border-radius: 0px 0px 0px 0px;
+}
+
 
 body {
+    /*Give the Container a little bit of Space on the sides and bottom*/
+    background: url("../img/grey.png") repeat;
+    border-top: 4px solid rgba(166, 1, 1, 1);
+    padding: 0 10px 25px 10px;
     font-family: 'Lato', sans-serif, helvetica, sans;
     font-size: 16px;
     line-height: 1.6em;
@@ -331,25 +300,42 @@ header, footer, nav#tools, nav#main, nav#skip, nav#legal, section#content
     height: auto;
     width: auto;
 }
-footer { border-top: 2px solid rgba(153, 153, 153,.75); }
+footer { border-top: 2px solid rgba(153, 153, 153,.50); }
 
+
+header img {max-height: 100px; max-width: 100%;}
+footer img {max-height: 1.3em ;}
 /*The following have custom styles for the desktop version*/
 /*These reset the above hyperlink styles for mobile*/
-nav#main a, nav#tools a, nav#skip a {
-    font-weight: bolder;
+a:active, a:hover, a:focus { /* On Hover change the Background to yellow*/
+    background-color: rgba(233,129,1,.35); 
+    color: rgba(166,42,1,1);
+}
+
+a:focus { /* Same thing as hover but add a bounding box */      
+    outline:2px dotted rgba(166,42,1,.5 );
+}
+nav#skip ul, nav#skip li {margin: 0;}
+/*Reset Navigation Link Styles*/
+nav#main a:link, nav#main a:visited, 
+nav#tools a:link, nav#tools a:visited,
+nav#skip a:link, nav#skip a:visited {
+    font-weight: bold;
+    font-size: 103%;
     /*Reset Undesirable Changes for navigation links */
      border: 0;
      -webkit-border-radius: 0px 0px 0px 0px; 
      border-radius: 0px 0px 0px 0px; 
 }
-nav#main li, nav#tools li, nav#skip li {
-    padding: 3px;
-}
+nav#main a:active, nav#main a:hover, nav#main a:focus, nav#main a.current,
+nav#tools a:active, nav#tools a:hover, nav#tools a:focus, nav#tools a.current,
+nav#skip a:active, nav#skip a:hover, nav#skip a:focus, nav#skip a.current {background-color: rgba(166, 42, 1, .95); color: rgb(243, 243, 243)}
+
 /*Manage Spacing for the Groups of links in Mobile View*/
 nav ul {padding: 0 20px; }
 /*Make Skip Top Menu Horizontal */
-#skip ul, #skip li {padding: 0; margin: 0;}
-#skip li {width: 50%;}
+#skip .horizontal ul, #skip .horizontal li {padding: 0; margin: 0;}
+#skip .horizontal li {width: 50%;}
 #skip a {padding: 5px; width: 100%;}
 #skip ul.horizontal { white-space: nowrap; text-align: center; }
 #skip ul.horizontal li { position: relative; display: inline-block; vertical-align: top; }
@@ -711,15 +697,15 @@ ul.vertical li ul
 ul.vertical li:hover ul { /* display: block;*/ visibility: visible; opacity: 1; } 
 ul.vertical li li { display: block; }
 
-}
 
 footer li {padding: 0 5px;}
 
+header {
+    background:url("../img/paper-overlay.png") repeat center center, url("../img/creativecommonsuserlittle-mountain-5-pilot-rock-panorama-from-summit-lossy.jpg") no-repeat center 100%;
+}
 
 
-
-
-
+}
 
 
 
@@ -1013,6 +999,10 @@ footer li {padding: 0 5px;}
         page-break-after: avoid;
     }
 }
+
+
+
+
 
 
 

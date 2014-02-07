@@ -42,15 +42,18 @@
                     <li><a href="#" onclick="window.print(); return false;" title="Opens the print dialog box."><i class="fa fa-fw fa-print fa-2x"></i></a></li>
                 </ul> 
             </nav>
-            <header class="gradient dark-blue pad-sides pad-tb">
+            <header class="pad-sides invisible-link">
+            <a class="none"href="<?php echo $sitepath;?>"><img src="<?php echo $sitepath; ?>img/epic-photography.png" alt="<?php echo $sitename; ?>" title="<?php echo $sitedescription; ?>"/></a>
+            <!--
                 <h1><a href="<?php echo $sitepath;?>"><?php echo $sitename; ?></a></h1>
                 <p><?php echo $sitedescription; ?></p>
+            -->
             </header>
             <div>
-            <nav id="main" class=" boxshadows orange background pad-tb">
+            <nav id="main" class=" boxshadows yellow background pad-tb">
                 <ul class="horizontal"> 
                     <li><a href="<?php echo $sitepath; ?>categories/nature/"><i class="fa fa-fw fa-globe"></i> Nature</a> 
-                    <ul class="transition corners boxshadows background pad-tb"> 
+                    <ul class="transition boxshadows background pad-tb"> 
                         <li><a href="<?php echo $sitepath; ?>categories/nature/mountains.php">Mountains</a></li> 
                         <li><a href="<?php echo $sitepath; ?>categories/nature/trees.php">Trees</a></li> 
                         <li><a href="<?php echo $sitepath; ?>categories/nature/water.php">Water</a></li> 
@@ -63,11 +66,11 @@
             </nav>
             </div>
             <div id="wrapper">
-            <section id="rightcolumn" class="transform">
-                <nav id="tools" class="corners boxshadows orange background pad-tb margin-tb">
-                    <ul class="vertical un-transform"> 
+            <section id="rightcolumn">
+                <nav id="tools" class="orange background pad-tb margin-tb">
+                    <ul class="vertical"> 
                         <li><a href="<?php echo $sitepath; ?>about/"><i class="fa fa-fw fa-user"></i> About Me</a> 
-                        <ul class="transition corners boxshadows background">
+                        <ul class="transition boxshadows background pad-tb">
                             <li><a href="<?php echo $sitepath; ?>about/contact.php">Contact Me</a></li> 
                             <li><a href="<?php echo $sitepath; ?>about/remove.php">Remove a Photo</a></li> 
                             <li><a href="<?php echo $sitepath; ?>about/share.php">Share This Site</a></li> 

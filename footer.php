@@ -12,6 +12,7 @@
                         <li><a href="<?php echo $sitepath; ?>about/contact.php">Contact Me</a></li>
                         <li>Epic Photography &copy; <?php print date('Y') ?> Cody Ray Freeman Hoeft.</li>
                         <li>Images are Property of their Respective Owners.</li>
+                        <li class="invisible-link"><a href="http://subtlepatterns.com/"><img src="<?php echo $sitepath ; ?>img/sp-logo.png" title="This Site Proudly Uses Subtle Patterns" alt="Subtle Patterns Logo"/></a></li>
                     </ul>
                 </nav>
             </footer>
