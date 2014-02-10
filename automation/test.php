@@ -1,7 +1,7 @@
 <?php 
-    $root = ""; //Not implemented yet
+    $root = "../"; //Not implemented yet
     $featured_array = array(); //actuallly put values here and move to pages
-    $file_array = array_diff( scandir( $root."images/"), array( '..', '.'));
+    $file_array = array_diff( scandir( $root."images/original/"), array( '..', '.'));
     //print_r( $file_array );
     $category_array = array();
     $tags_array = array();
@@ -31,5 +31,5 @@
     }
     foreach( $category_array as &$category_item) shuffle( $category_item );
     unset($category_item);
-    print_r( $category_array );
+    print_r( $unsorted );
 ?>
