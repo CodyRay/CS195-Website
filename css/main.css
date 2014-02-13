@@ -99,53 +99,23 @@ textarea {
    ========================================================================== */
 .corners  /*border radius*/
 {
-    -webkit-border-radius: 7px;
-    border-radius: 7px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.boxshadows-lot
+{
+    /*Default Text Color Shadow */
+    -webkit-box-shadow: 0 0 20px 5px rgba(68,68,68,.5);
+    box-shadow: 0px 0px 20px 5px rgba(68,68,68,.5);
 }
 
 .boxshadows 
 {
     /*Default Text Color Shadow */
-    -webkit-box-shadow: 0 0 20px 3px rgba(68,68,68,.5);
-    box-shadow: 0 0 20px 3px rgba(68,68,68,.5);
+    -webkit-box-shadow: 1px 1px 5px 1px rgba(68,68,68,.5);
+    box-shadow: 1px 1px 5px 1px rgba(68,68,68,.5);
 }
-
-.boxshadows.red
-{
-    /*Red: Brown Orange Shadow*/
-    -webkit-box-shadow: 0 0 20px 3px rgba(166,42,1,.5);
-    box-shadow: 0 0 20px 3px rgba(166,42,1,.5);
-}
-
-.boxshadows.orange
-{
-    /*Orange: Orange Accent Color Shadow*/
-    -webkit-box-shadow: 0 0 20px 3px rgba(190,80,1,.5);
-    box-shadow: 0 0 20px 3px rgba(190,80,1,.5);
-}
-
-.boxshadows.yellow
-{
-    /*Yellow: Yellow Orange Color Shadow*/
-    -webkit-box-shadow: 0 0 20px 3px rgba(233,129,1,.5);
-    box-shadow: 0 0 20px 3px rgba(233,129,1,.5);
-}
-
-.boxshadows.dark-blue
-{
-    /*Dark-Blue Hyperlink Color Shadow*/
-    -webkit-box-shadow: 0 0 20px 3px rgba(4,33,72,.5);
-    box-shadow: 0 0 20px 3px rgba(4,33,72,.5);
-}
-
-#container.boxshadows
-{
-    /*Make the Box Shadow for the Container biger*/
-    /*Use the Emphasis Text Colour */
-    -webkit-box-shadow: 0 0 20px 7px rgba(153,153,153,.5);
-    box-shadow: 0 0 20px 7px rgba(153,153,153,.5);
-}
-
 .background 
 {
     background-color: rgba(255,255,255,.9);
@@ -252,7 +222,7 @@ a:focus { /* Same thing as hover but add a bounding box */
     outline:2px dotted rgba(166,42,1,.5 );
 }
 
-
+/*Use this class where you want a link without any indicators*/
 .invisible-link a, .invisible-link a:link, .invisible-link a:visited, .invisible-link a:active, .invisible-link a:hover, .invisible-link a:focus { 
     background-color: inherit;
     transition: none;
@@ -318,6 +288,8 @@ a:active, a:hover, a:focus { /* On Hover change the Background to yellow*/
 a:focus { /* Same thing as hover but add a bounding box */      
     outline:2px dotted rgba(166,42,1,.5 );
 }
+nav a {display: block;}
+nav#legal a {display: initial;}
 nav#skip ul, nav#skip li {margin: 0;}
 /*Reset Navigation Link Styles*/
 nav#main a:link, nav#main a:visited, 
@@ -344,16 +316,100 @@ nav ul {padding: 0 20px; }
 #skip ul.horizontal li { position: relative; display: inline-block; vertical-align: top; }
 #skip ul.horizontal li a { display: inline-block; text-decoration: none; }
 
+.aside {
+    width: 80%;
+    margin: 0 auto;
+}
 
+table {
+    width: 90%;
+    border: 4px solid rgba(190,80,1,1);
+    border-collapse: collapse;
+    background-color: transparent;
+    font-size: 105%;
+}
+table caption {
+    padding: 10px 0;
+}
+th, td {
+    padding: 3px 7px;
+}
+thead tr{
+    border-bottom: 4px solid rgba(190,80,1,1);
+    font-weight: bolder;
+}
+tfoot tr{
+    border-top: 4px solid rgba(190,80,1,1);
+    font-weight: bolder;
+}
+tr {
+    border: 2px solid rgba(190,80,1,1);
+}
+th {
+    color: rgba(166,42,1,1);
+}
+tbody th {
+    border-right: 1px solid rgba(190,80,1,1);
+}
+tbody td {
+    border-right: 1px dashed rgba(190,80,1,1);
+}
+tbody tr:nth-child(odd) {
+    background-color: rgba(173, 198, 214, .5);
+    color: rgba(34,34,34,1);
+}
+tfoot th {
+    border-right: 1px solid rgba(190,80,1,1);
+}
 
+/*Gallery*/
+ul.gallery {/* This block holds a set of images and captions.  */
+    list-style-type:none; 
+    padding:0; 
+    text-align:center;
+    }
+ul.gallery li {/* This block holds one image and its caption */
+    position:relative; 
+    width:100%;
+    margin:0 10px 10px 0; /* Add breathing room between each block. */
+    /* Add style to make each block unique. */
+    padding:;  
+    border:;
+    }  
+ul.gallery li img {/* This block is the image. */
+    width:100%;
+    margin:0; /* Added margin is optional. */
+    padding:0; /* Don't add padding. */
+    }
+ul.gallery ul { /* This block holds the caption. */
+    list-style-type:none; /* Turn off bullets even though they should inherit the parent style. */
+    margin:0; 
+    padding:0;
+    width:100%; 
+    height:auto;
+    background-color:; /* Choose a color to match your color scheme. */
+    } 
+ul.gallery ul li {/* This block is the caption text. */
+    margin:0; 
+    padding:0;
+    border:0;
+    /* Style the text. */
+    color:;
+    font-size:; /* Adjust this based on the body's font size. */
+    line-height:;
+    vertical-align:; /* Requires line-height */
+    }
 
-
-
-
-
-
-
-
+video, audio, iframe, object, embed {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    }
+cite {
+    
+}
 
 
 
@@ -602,21 +658,32 @@ nav ul {padding: 0 20px; }
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+@media only screen and (max-width: 50em) {
+    /*This seemed like the best way to do this*/
+.center-on-mobile {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+}
 /*desktop desktop */
 @media only screen and (min-width: 50em) {
     /* Style adjustments for viewports that meet the condition }*/
 
-section#leftcolumn
+.aligncenter {text-align: center; margin: 0 auto;}
+.leftcolumn
 {
     float: left;
+    margin-right: 20px;
 }
 
-section#rightcolumn
+.rightcolumn
 {
     float: right;
+    margin-left: 20px;
 }
 
-section#leftcolumn, section#rightcolumn
+.leftcolumn, .rightcolumn
 {
     width: 225px;
 }
@@ -706,6 +773,71 @@ header {
     background:url("../img/paper-overlay.png") repeat center center, url("../img/creativecommonsuserlittle-mountain-5-pilot-rock-panorama-from-summit-lossy.jpg") no-repeat center 100%;
 }
 
+/*Gallery*/
+ul.gallery {/* The outermost block of the gallery. */}
+ul.gallery li {/* This block inherits mobile properties. 
+    Define a size for the thumbnail blocks. */ 
+    width:100px;
+    height:135px;
+    float:left; /* Sets each block side by side. */
+    position:relative;
+    }  
+ul.gallery li img { /* This block inherits mobile properties. */
+    width:100px;
+    height:100px; /* This gallery method works best with square thumbnails. */
+    }
+ul.gallery ul {/* This block inherits mobile properties.
+    The height should be the remaining portion of the LI above. */
+    width:100%;
+    height:35px;
+    }
+ul.gallery ul li {/* The height and padding must add up to the height of the LI above.  */
+    height:30px;
+    padding-top:5px;
+    /* Turn off and change inherited properties. */
+    border:0;
+    float:none;
+    font-family:;
+    font-size:;
+    line-height:;
+    }
+ul.gallery li:hover img {/* Enlarge size of image when hovering. */
+    /* Allow image's full dimensions to display. */
+    width:auto;
+    height:auto;
+    /* Position it for ease of use. */
+    position:relative;
+    left:-50%; /* Center the image under the thumbnail. */
+    top:-1px; /* Same width as border. */
+    z-index:300;
+    /* Style the popup with these optional properites: */
+    padding:0; 
+    border:;
+    box-shadow:;
+    border-radius:;
+    }
+ul.gallery li:hover ul {/* Show the caption block in the popup. */
+    /* Position the caption on top of the image. */
+    position:relative;
+    z-index:400;
+    /* Style the caption block. */
+    top:;
+    left:;
+    border:;
+    width:;
+    height:;
+    background-color:;
+    }
+ul.gallery li:hover ul li {/* Allow the text to fill the block. */
+    width:auto; 
+    height:;  /* Use pixles or ems. */
+    line-height:; /* Use same size as height. */
+    /* Style the caption text in the popup. */
+    vertical-align:;
+    font-size:;
+    color:;
+    font-weight:;
+    }
 
 }
 

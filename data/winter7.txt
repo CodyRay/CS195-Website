@@ -1,6 +1,6 @@
 <?php
 $title = "Winter";
-$category = "nature";
 $author = "";
-$tags = array("water", "trees" );
+$caption = "This is a custom caption";
+$tags = array("water", "trees", "nature" );
 ?>
