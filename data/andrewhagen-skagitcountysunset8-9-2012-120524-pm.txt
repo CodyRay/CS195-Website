@@ -1,0 +1,24 @@
+<?php /*
+DCT Encode Version              : 100
+APP14 Flags 0                   : (none)
+APP14 Flags 1                   : (none)
+Color Transform                 : YCbCr
+Exif Byte Order                 : Big-endian (Motorola, MM)
+Image Description               : Skagit County Sunset, Washington, U.S.
+Artist                          : Andrew Hagen
+Copyright                       : Andrew Hagen
+XP Title                        : Skagit County Sunset, Washington, U.S.
+XP Author                       : Andrew Hagen
+Padding                         : (Binary data 2060 bytes, use -b option to extract)
+About                           : uuid:faf5bdd5-ba3d-11da-ad31-d33d75182f1b
+Creator                         : Andrew Hagen
+Rights                          : Andrew Hagen
+Title                           : Skagit County Sunset, Washington, U.S.
+Description                     : Skagit County Sunset, Washington, U.S.
+*/
+$title = "Skagit County Sunset, Washington, U.S.";
+$author= "Andrew Hagen";
+$caption= "Skagit County Sunset, Washington, U.S.";
+$tags=array("nature"
+ );
+?>

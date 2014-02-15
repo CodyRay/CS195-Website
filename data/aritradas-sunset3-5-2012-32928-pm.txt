@@ -1,0 +1,24 @@
+<?php /*
+DCT Encode Version              : 100
+APP14 Flags 0                   : (none)
+APP14 Flags 1                   : (none)
+Color Transform                 : YCbCr
+Exif Byte Order                 : Big-endian (Motorola, MM)
+Image Description               : Sunset
+Artist                          : Aritra Das
+Copyright                       : Aritra Das
+XP Title                        : Sunset
+XP Author                       : Aritra Das
+Padding                         : (Binary data 2060 bytes, use -b option to extract)
+About                           : uuid:faf5bdd5-ba3d-11da-ad31-d33d75182f1b
+Creator                         : Aritra Das
+Rights                          : Aritra Das
+Title                           : Sunset
+Description                     : Sunset
+*/
+$title = "Sunset";
+$author= "Aritra Das";
+$caption= "Sunset over palm-trees";
+$tags=array("trees", "nature"
+ );
+?>

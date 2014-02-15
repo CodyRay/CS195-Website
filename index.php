@@ -8,14 +8,14 @@
 <iframe src="//www.youtube.com/embed/CnWsC4kIHn8?rel=0" frameborder="0" allowfullscreen></iframe>
 <figure>
 <ul class="gallery invisible-link">
-  <li><?php getimage('bosquetk','column'); ?>
-      <ul><li><?php getcaption('bosquetk'); ?></li></ul>
+  <li><?php getimage('bosquetk','column', $image_array); ?>
+      <ul><li><?php getcaption('bosquetk', $image_array); ?></li></ul>
   </li>
-  <li><?php getimage('rainbows4','column'); ?>
-      <ul><li><?php getcaption('bosquetk'); ?></li></ul>
+  <li><?php getimage('rainbows4','column', $image_array); ?>
+      <ul><li><?php getcaption('rainbows4', $image_array); ?></li></ul>
   </li>
-  <li><?php getimage('jean-claudebaumert-morninglakelouisebanffnpalbertacanada5-22-2012-11606-pm','column'); ?>
-      <ul><li><?php getcaption('bosquetk'); ?></li></ul>
+  <li><?php getimage('jean-claudebaumert-morninglakelouisebanffnpalbertacanada5-22-2012-11606-pm','column', $image_array); ?>
+      <ul><li><?php getcaption('jean-claudebaumert-morninglakelouisebanffnpalbertacanada5-22-2012-11606-pm', $image_array); ?></li></ul>
   </li>
 </ul>
 </figure>

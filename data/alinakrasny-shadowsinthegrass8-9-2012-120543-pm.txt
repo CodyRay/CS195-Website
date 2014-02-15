@@ -1,0 +1,24 @@
+<?php /*
+DCT Encode Version              : 100
+APP14 Flags 0                   : (none)
+APP14 Flags 1                   : (none)
+Color Transform                 : YCbCr
+Exif Byte Order                 : Big-endian (Motorola, MM)
+Image Description               : Shadows on the grass
+Artist                          : Alina Krasny
+Copyright                       : Alina Krasny
+XP Title                        : Shadows on the grass
+XP Author                       : Alina Krasny
+Padding                         : (Binary data 2060 bytes, use -b option to extract)
+About                           : uuid:faf5bdd5-ba3d-11da-ad31-d33d75182f1b
+Creator                         : Alina Krasny
+Rights                          : Alina Krasny
+Title                           : Shadows on the grass
+Description                     : Shadows on the grass
+*/
+$title = "Shadows on the grass";
+$author= "Alina Krasny";
+$caption= "Shadows on the grass";
+$tags=array("trees", "nature"
+ );
+?>
