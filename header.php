@@ -32,25 +32,28 @@
         <link href='http://fonts.googleapis.com/css?family=Signika:400,700' rel='stylesheet' type='text/css'>
     </head>
     <body>
-        <div id="container" class="boxshadows">
+        <div id="container" class="boxshadows-lot">
             <!--[if lt IE 7]>
                 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
             <![endif]-->
             <nav id="skip" class="pad-sides">
                 <ul class="horizontal">
-                    <li><a href="#content" title="Skip To Content"><i class="fa fa-fw fa-arrow-down fa-2x"></i></a></li>
+                    <li><a href="#content" title="Skip To Content"><i class="fa fa-fw fa-chevron-circle-down fa-2x"></i></a></li>
                     <li><a href="#" onclick="window.print(); return false;" title="Opens the print dialog box."><i class="fa fa-fw fa-print fa-2x"></i></a></li>
                 </ul> 
             </nav>
-            <header class="gradient dark-blue pad-sides pad-tb">
+            <header class="pad-sides invisible-link">
+            <a class="none" href="<?php echo $sitepath;?>"><img src="<?php echo $sitepath; ?>img/epic-photography.png" alt="<?php echo $sitename; ?>" title="<?php echo $sitedescription; ?>"/></a>
+            <!--
                 <h1><a href="<?php echo $sitepath;?>"><?php echo $sitename; ?></a></h1>
                 <p><?php echo $sitedescription; ?></p>
+            -->
             </header>
             <div>
-            <nav id="main" class=" boxshadows orange background pad-tb">
+            <nav id="main" class=" yellow background pad-tb">
                 <ul class="horizontal"> 
                     <li><a href="<?php echo $sitepath; ?>categories/nature/"><i class="fa fa-fw fa-globe"></i> Nature</a> 
-                    <ul class="transition corners boxshadows background pad-tb"> 
+                    <ul class="transition background pad-tb"> 
                         <li><a href="<?php echo $sitepath; ?>categories/nature/mountains.php">Mountains</a></li> 
                         <li><a href="<?php echo $sitepath; ?>categories/nature/trees.php">Trees</a></li> 
                         <li><a href="<?php echo $sitepath; ?>categories/nature/water.php">Water</a></li> 
@@ -63,11 +66,11 @@
             </nav>
             </div>
             <div id="wrapper">
-            <section id="rightcolumn" class="transform">
-                <nav id="tools" class="corners boxshadows orange background pad-tb margin-tb">
-                    <ul class="vertical un-transform"> 
+            <section class="rightcolumn">
+                <nav id="tools" class="orange background pad-tb margin-tb">
+                    <ul class="vertical"> 
                         <li><a href="<?php echo $sitepath; ?>about/"><i class="fa fa-fw fa-user"></i> About Me</a> 
-                        <ul class="transition corners boxshadows background">
+                        <ul class="transition boxshadows background pad-tb">
                             <li><a href="<?php echo $sitepath; ?>about/contact.php">Contact Me</a></li> 
                             <li><a href="<?php echo $sitepath; ?>about/remove.php">Remove a Photo</a></li> 
                             <li><a href="<?php echo $sitepath; ?>about/share.php">Share This Site</a></li> 
@@ -76,6 +79,10 @@
                         <li><a href="<?php echo $sitepath; ?>categories/"><i class="fa fa-fw fa-picture-o"></i> List Photo Categories</a></li> 
                     </ul>
                 </nav>
+                <aside class="yellow background pad-tb margin-tb fit-content">
+                    <img class="margin-half-sides margin-half-tb red boxshadows" src="<?php echo $sitepath ;?>img/yellowflower.jpg" alt="Yellow Flower on a Blue Sky" title="Ubuntu 10.04 Default Wallpaper &copy; Canonical 2010">
+                    <img class="margin-half-sides margin-half-tb red boxshadows" src="<?php echo $sitepath ;?>img/7-nasaspacescapes.jpg" alt="Orion Nebula" title="NASA Spitzer Space Telescope &copy; NASA 2010">
+                </aside>
             </section>
             <section id="content">
             <h1><?php print $pagetitle;?></h1>
