@@ -1,0 +1,25 @@
+<?php /*
+DCT Encode Version              : 100
+APP14 Flags 0                   : (none)
+APP14 Flags 1                   : (none)
+Color Transform                 : YCbCr
+Exif Byte Order                 : Big-endian (Motorola, MM)
+Image Description               : Cloud formation
+Artist                          : Alby Laran
+Copyright                       : Alby Laran
+XP Title                        : Cloud formation
+XP Comment                      : http://www.albylaran.com/
+XP Author                       : Alby Laran
+Padding                         : (Binary data 2060 bytes, use -b option to extract)
+About                           : uuid:faf5bdd5-ba3d-11da-ad31-d33d75182f1b
+Creator                         : Alby Laran
+Rights                          : Alby Laran
+Title                           : Cloud formation
+Description                     : Cloud formation
+*/
+$title = "Cloud formation";
+$author= "Alby Laran";
+$caption= "Cloud formation";
+$tags=array("nature"
+ );
+?>

@@ -25,15 +25,15 @@
                 'tags' => $tags
                 );
             //print_r( $image_array );
-            foreach( $tags as $tag ) $tags_array[ $tag ][] = $file;
+            foreach( $tags as $tag ) $tags_array[ $tag ][] = $image_root;
         }
     }
     foreach( $category_array as &$category_item) shuffle( $category_item );
     unset($category_item);
     shuffle( $unsorted );
-    function getimage($image, $size) { ?>
-            <a href="http://people.oregonstate.edu/~hoeftc/images/original/<?php echo $image; ?>.jpg"><img src="http://people.oregonstate.edu/~hoeftc/images/wide/column/<?php echo $image; ?>-400x225.jpg" alt="<?php echo $image_array[$image]['title'];?>" title="&copy; <?php echo $image_array[$image]['author']; ?> 2014"/></a>
+    function getimage($image, $size, $image_array) { ?>
+        <a href="http://people.oregonstate.edu/~hoeftc/images/original/<?php echo $image; ?>.jpg"><img src="http://people.oregonstate.edu/~hoeftc/images/wide/column/<?php echo $image; ?>-400x225.jpg" alt="<?php echo $image_array[$image]['title'];?>" title="&copy; <?php echo $image_array[$image]['author']; ?> 2014"/></a>
         <?php 
-}
-function getcaption($image){ echo $image_array[$image]['caption']; }
+    }
+function getcaption($image, $image_array){ echo $image_array[$image]['caption']; }
 ?>
