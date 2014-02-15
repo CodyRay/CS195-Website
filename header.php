@@ -53,7 +53,7 @@
             <nav id="main" class=" yellow background pad-tb">
                 <ul class="horizontal"> 
                     <li><a href="<?php echo $sitepath; ?>categories/nature/"><i class="fa fa-fw fa-globe"></i> Nature</a> 
-                    <ul class="transition background pad-tb"> 
+                    <ul class="transition background pad-tb boxshadows"> 
                         <li><a href="<?php echo $sitepath; ?>categories/nature/mountains.php">Mountains</a></li> 
                         <li><a href="<?php echo $sitepath; ?>categories/nature/trees.php">Trees</a></li> 
                         <li><a href="<?php echo $sitepath; ?>categories/nature/water.php">Water</a></li> 
@@ -77,6 +77,7 @@
                         </ul>
                         </li>
                         <li><a href="<?php echo $sitepath; ?>categories/"><i class="fa fa-fw fa-picture-o"></i> List Photo Categories</a></li> 
+                        <li><a href="<?php echo $sitepath; ?>about/slideshow.php"><i class="fa fa-fw fa-desktop"></i> Desktop Slideshows</a></li> 
                     </ul>
                 </nav>
                 <aside class="yellow background pad-tb margin-tb fit-content">

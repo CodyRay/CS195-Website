@@ -413,6 +413,12 @@ cite {
     
 }
 
+nav#main a, nav#tools a, nav#skip a {
+    padding: 5px 20px;/*Padding gives items size*/ 
+    margin: 0;
+}
+
+.aligncenter {text-align: center; margin: 0 auto;}
 
 
 
@@ -668,11 +674,62 @@ cite {
     margin: 0 auto;
 }
 }
+@media only screen and (min-width: 30em) {
+    /*Make the horizontal stuff a little bit cleaner in the in-between area
+/*************************************************************************
+ * Horizontal Menus
+ */
+/*Make Menus Horizontal */
+ul.horizontal { text-align: center;}
+ul.horizontal li { position: relative; display: inline-block; vertical-align: top; }
+ul.horizontal li a { display: block; text-decoration: none; }
+/*IE FIX/
+ul .horizontal li { display: -moz-inline-stack; display: inline-block; zoom: 1; *display: inline; position: relative; }
+/*Slide Out Menus*/
+ul.horizontal li ul 
+{ 
+    /*display: none;*/
+    position: absolute; 
+    top: 100%;
+    z-index: 111;
+    /* http://stackoverflow.com/questions/3331353/transitions-on-the-display-property
+     * Transparent Fade Effect*/
+    visibility: hidden;
+    opacity: 0;
+}
+ul.horizontal li:hover ul {/* display: block;*/ visibility: visible; opacity: 1; }
+ul.horizontal li li {display: block; }
+
+
+/*************************************************************************
+ * Vertical Menus
+ */
+/*Make Menus Vertical */
+
+ul.vertical { white-space:nowrap; }
+ul.vertical li {position:relative; display:block;}
+ul.vertical li a {text-decoration:none; display:block;}
+/*Slide Out Menues*/
+ul.vertical li li { display: block; }
+
+footer li {padding: 0 5px;}
+nav#legal a { display: inline; }
+
+.horizontal ul, .horizontal li {padding: 0; margin: 0;}
+
+.leftcolumn, .rightcolumn
+{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 450px;
+}
+
+}
+    
 /*desktop desktop */
 @media only screen and (min-width: 50em) {
     /* Style adjustments for viewports that meet the condition }*/
 
-.aligncenter {text-align: center; margin: 0 auto;}
 .leftcolumn
 {
     float: left;
@@ -711,39 +768,11 @@ h1, h2, h3, h4, h5, h6 {
     text-align: left;
 }
 
-nav ul, nav li {padding: 0; margin: 0;}
-nav#main a, nav#tools a, nav#skip a {
-    padding: 5px 20px;/*Padding gives items size*/ 
-    margin: 0;
-}
-
 /*Goes around sidebars and content to give them space from the sides*/
 div#wrapper {padding: 30px 20px 0 20px;}
 
-/*************************************************************************
- * Horizontal Menus
- */
-/*Make Menus Horizontal */
-ul.horizontal { text-align: center;}
-ul.horizontal li { position: relative; display: inline-block; vertical-align: top; }
-ul.horizontal li a { display: block; text-decoration: none; }
-/*IE FIX/
-ul .horizontal li { display: -moz-inline-stack; display: inline-block; zoom: 1; *display: inline; position: relative; }
-/*Slide Out Menus*/
-ul.horizontal li ul 
-{ 
-    /*display: none;*/
-    position: absolute; 
-    top: 100%;
-    z-index: 111;
-    /* http://stackoverflow.com/questions/3331353/transitions-on-the-display-property
-     * Transparent Fade Effect*/
-    visibility: hidden;
-    opacity: 0;
-}
-ul.horizontal li:hover ul {/* display: block;*/ visibility: visible; opacity: 1; }
-ul.horizontal li li {display: block; }
-    
+nav ul, nav li {padding: 0; margin: 0;}
+
 /*************************************************************************
  * Vertical Menus
  */
@@ -769,8 +798,6 @@ ul.vertical li:hover ul { /* display: block;*/ visibility: visible; opacity: 1; 
 ul.vertical li li { display: block; }
 
 
-footer li {padding: 0 5px;}
-nav#legal a { display: inline; }
 header {
     background:url("../img/paper-overlay.png") repeat center center, url("../img/creativecommonsuserlittle-mountain-5-pilot-rock-panorama-from-summit-lossy.jpg") no-repeat center 100%;
 }

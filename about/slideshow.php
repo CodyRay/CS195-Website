@@ -16,22 +16,22 @@
                   <tr>
                           <th>Windows (7/8)</th>
                           <td>Yes</td>
-                          <td><a href="http://www.howtogeek.com/howto/6158/turn-your-desktop-into-a-picture-slideshow-in-windows-7/" title="How to turn you desktop into a picture slideshow in Windows 7">How-To Geek </a></td>
+                          <td><a href="http://www.howtogeek.com/howto/6158/turn-your-desktop-into-a-picture-slideshow-in-windows-7/" target="_blank" title="How to turn you desktop into a picture slideshow in Windows 7">How-To Geek </a></td>
                   </tr>
                   <tr>
                           <th>Mac OS (X)</th>
                           <td>Yes</td>
-                          <td><a href="http://www.ehow.com/how_2181393_desktop-slideshow-mac-os-x.html" title="How to set-up a desktop slideshow on Mac OS X">eHow</a></td>
+                          <td><a href="http://www.ehow.com/how_2181393_desktop-slideshow-mac-os-x.html" target="_blank" title="How to set-up a desktop slideshow on Mac OS X">eHow</a></td>
                   </tr>  
                   <tr>
                           <th>Linux (Unity)</th>
                           <td>Yes (need Wallch)</td>
-                          <td><a href="http://sourceforge.net/projects/wall-changer/" title="Wallch on Sourceforge">Wallch</a></td>
+                          <td><a href="http://sourceforge.net/projects/wall-changer/" target="_blank" title="Wallch on Sourceforge">Wallch</a></td>
                   </tr>
                   <tr>
                           <th>Chrome OS</th>
                           <td>Not Really *</td>
-                          <td><a href="http://www.gottabemobile.com/2013/09/14/6-chromeos-tips-make-chromebook-sparkle/#attachment_203164" title="Surprise Me feature of Chrome OS">Surprise Me</a></td>
+                          <td><a href="http://www.gottabemobile.com/2013/09/14/6-chromeos-tips-make-chromebook-sparkle/#attachment_203164" target="_blank" title="Surprise Me feature of Chrome OS">Surprise Me</a></td>
                   </tr>
                   <tr>
                           <th>Other</th>
@@ -45,8 +45,10 @@
             </tfoot>
             </table>
         <h2>Review of Wallch</h2>
-    <iframe src="http://www.youtube.com/embed/CnWsC4kIHn8?wmode=transparent"></iframe>
-    <p><cite>Wallch Review - App Reviews: &copy; Blaine Packer 2012, 5:16 Min Flash Video</cite></p>
+        <figure class="youtube aligncenter">
+            <iframe src="http://www.youtube.com/embed/CnWsC4kIHn8?wmode=transparent"></iframe>
+            <p><cite>Wallch Review - App Reviews: &copy; Blaine Packer 2012, 5:16 Min Flash Video</cite></p>
+        </figure>
     <?php include($root."footer.php");
 
 ?>
