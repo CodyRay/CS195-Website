@@ -3,7 +3,7 @@
     $root = "../"; 
     include($root."images.php");
     include($root."header.php");?>
-        <table class="aligncenter">
+    <table class="aligncenter">
             <caption>Consult the table below to find if your operating system allows you to setup a desktop slideshow</caption>
             <thead>
                   <tr>
@@ -43,7 +43,10 @@
                           <th colspan="3">* Chrome OS doesn't let you select your photos</th>
                   </tr>
             </tfoot>
-        </table>
+            </table>
+        <h2>Review of Wallch</h2>
+    <iframe src="http://www.youtube.com/embed/CnWsC4kIHn8?wmode=transparent"></iframe>
+    <p><cite>Wallch Review - App Reviews: &copy; Blaine Packer 2012, 5:16 Min Flash Video</cite></p>
     <?php include($root."footer.php");
 
 ?>
