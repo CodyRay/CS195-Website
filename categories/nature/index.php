@@ -1,21 +1,18 @@
 <?php 
+$root="../../";
+include $root.'images.php';
 $category="Nature";
 $pagetitle="Category: ".$category;
 ?>
 <?php include '../../header.php'; ?>
-<p>This is the awesome Nature pictures</p>
-<figure>
+<p>Here are some awesome nature pictures</p>
+<figure class="transition">
     <ul class="gallery invisible-link">
-        <li><?php getimage('bosquetk','column', $image_array); ?>
-            <ul><li><?php getcaption('bosquetk', $image_array); ?></li></ul>
+<?php foreach($tags_array['nature'] as $image) : ?>
+        <li><?php getimage($image,'column', $image_array); ?>
+            <ul><li><?php getcaption($image, $image_array); ?></li></ul>
         </li>
-        <li><?php getimage('rainbows4','column', $image_array); ?>
-            <ul><li><?php getcaption('rainbows4', $image_array); ?></li></ul>
-        </li>
-        <li><?php getimage('jean-claudebaumert-morninglakelouisebanffnpalbertacanada5-22-2012-11606-pm','column', $image_array); ?>
-            <ul><li><?php getcaption('jean-claudebaumert-morninglakelouisebanffnpalbertacanada5-22-2012-11606-pm', $image_array); ?></li></ul>
-        </li>
+<?php endforeach; ?>
     </ul>
 </figure>
-
 <?php include '../../footer.php'; ?>

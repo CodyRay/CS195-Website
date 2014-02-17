@@ -42,7 +42,7 @@
                     <li><a href="#" onclick="window.print(); return false;" title="Opens the print dialog box."><i class="fa fa-fw fa-print fa-2x"></i></a></li>
                 </ul> 
             </nav>
-            <header class="pad-sides invisible-link">
+            <header class="boxshadows-lot pad-sides invisible-link">
             <a class="none" href="<?php echo $sitepath;?>"><img src="<?php echo $sitepath; ?>img/epic-photography.png" alt="<?php echo $sitename; ?>" title="<?php echo $sitedescription; ?>"/></a>
             <!--
                 <h1><a href="<?php echo $sitepath;?>"><?php echo $sitename; ?></a></h1>
@@ -50,7 +50,7 @@
             -->
             </header>
             <div>
-            <nav id="main" class=" yellow background pad-tb">
+            <nav id="main" class="boxshadows-lot yellow background pad-tb">
                 <ul class="horizontal"> 
                     <li><a href="<?php echo $sitepath; ?>categories/nature/"><i class="fa fa-fw fa-globe"></i> Nature</a> 
                     <ul class="transition background pad-tb boxshadows"> 
@@ -67,7 +67,7 @@
             </div>
             <div id="wrapper">
             <section class="rightcolumn">
-                <nav id="tools" class="orange background pad-tb margin-tb">
+                <nav id="tools" class="boxshadows orange background pad-tb margin-tb">
                     <ul class="vertical"> 
                         <li><a href="<?php echo $sitepath; ?>about/"><i class="fa fa-fw fa-user"></i> About Me</a> 
                         <ul class="transition boxshadows background pad-tb">
@@ -80,9 +80,9 @@
                         <li><a href="<?php echo $sitepath; ?>about/slideshow.php"><i class="fa fa-fw fa-desktop"></i> Desktop Slideshows</a></li> 
                     </ul>
                 </nav>
-                <aside class="yellow background pad-tb margin-tb fit-content">
-                    <img class="margin-half-sides margin-half-tb red boxshadows" src="<?php echo $sitepath ;?>img/yellowflower.jpg" alt="Yellow Flower on a Blue Sky" title="Ubuntu 10.04 Default Wallpaper &copy; Canonical 2010">
-                    <img class="margin-half-sides margin-half-tb red boxshadows" src="<?php echo $sitepath ;?>img/7-nasaspacescapes.jpg" alt="Orion Nebula" title="NASA Spitzer Space Telescope &copy; NASA 2010">
+                <aside class="margin-tb fit-content">
+                    <img class="boxshadows" src="<?php echo $sitepath ;?>img/yellowflower.jpg" alt="Yellow Flower on a Blue Sky" title="Ubuntu 10.04 Default Wallpaper &copy; Canonical 2010">
+                    <img class="margin-tb boxshadows" src="<?php echo $sitepath ;?>img/7-nasaspacescapes.jpg" alt="Orion Nebula" title="NASA Spitzer Space Telescope &copy; NASA 2010">
                 </aside>
             </section>
             <section id="content">

@@ -365,44 +365,6 @@ tbody tr:nth-child(odd) {
 }
 
 
-/*Gallery*/
-ul.gallery {/* This block holds a set of images and captions.  */
-    list-style-type:none; 
-    padding:0; 
-    text-align:center;
-    }
-ul.gallery li {/* This block holds one image and its caption */
-    position:relative; 
-    width:100%;
-    margin:0 10px 10px 0; /* Add breathing room between each block. */
-    /* Add style to make each block unique. */
-    padding:;  
-    border:;
-    }  
-ul.gallery li img {/* This block is the image. */
-    width:100%;
-    margin:0; /* Added margin is optional. */
-    padding:0; /* Don't add padding. */
-    }
-ul.gallery ul { /* This block holds the caption. */
-    list-style-type:none; /* Turn off bullets even though they should inherit the parent style. */
-    margin:0; 
-    padding:0;
-    width:100%; 
-    height:auto;
-    background-color:; /* Choose a color to match your color scheme. */
-    } 
-ul.gallery ul li {/* This block is the caption text. */
-    margin:0; 
-    padding:0;
-    border:0;
-    /* Style the text. */
-    color:;
-    font-size:; /* Adjust this based on the body's font size. */
-    line-height:;
-    vertical-align:; /* Requires line-height */
-    }
-
 video, audio, iframe, object, embed {
     border: 0;
     width: 100%;
@@ -419,12 +381,33 @@ nav#main a, nav#tools a, nav#skip a {
 }
 
 .aligncenter {text-align: center; margin: 0 auto;}
+ul.gallery, .gallery li, .gallery ul {margin: 0; padding: 0;list-style-type: none; text-decoration: none; text-align: center;}
 
+ul.gallery li img {
+    padding: 5px 5px 0 5px;
+    width:100%;
+    }
+ul.gallery ul li {/* The height and padding must add up to the height of the LI above.  */
+    /* Turn off and change inherited properties. */
+    font-size: 80%;
+    padding: 5px;
+    width: 100%;
+    line-height:1.1em;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
 
+ul.gallery li {
+    /*Default Text Color Shadow */
+    -webkit-box-shadow: 1px 1px 5px 1px rgba(68,68,68,.5);
+    box-shadow: 1px 1px 5px 1px rgba(68,68,68,.5);
+    margin: 10px 0;
+    }  
 
-
-
-
+ul.gallery li ul li {
+    margin: 0;
+    padding: 8px 0;
+}
 
 
 
@@ -691,7 +674,7 @@ ul.horizontal li ul
     /*display: none;*/
     position: absolute; 
     top: 100%;
-    z-index: 111;
+    z-index: 999;
     /* http://stackoverflow.com/questions/3331353/transitions-on-the-display-property
      * Transparent Fade Effect*/
     visibility: hidden;
@@ -723,6 +706,89 @@ nav#legal a { display: inline; }
     margin: 0 auto;
     max-width: 450px;
 }
+
+ul.gallery, .gallery li, .gallery ul {margin: 0; padding: 0;text-decoration: none; text-align: center;}
+ul.gallery li {
+    width:180px;
+    max-height:230px;
+    vertical-align: top;
+    display: inline-block; /* Sets each block side by side. */
+    position:relative;
+    padding: 5px;
+    margin:0 10px 10px 0; /* Add breathing room between each block. */
+    
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    /*Default Text Color Shadow */
+    -webkit-box-shadow: 1px 1px 5px 1px rgba(68,68,68,.5);
+    box-shadow: 1px 1px 5px 1px rgba(68,68,68,.5);
+    }  
+ul.gallery li li { 
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+ul.gallery li img { /* This block inherits mobile properties. */
+    padding: 0px;
+    width:170px;
+    height:auto; /* This gallery method works best with square thumbnails. */
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    }
+ul.gallery ul {/* This block inherits mobile properties.
+    The height should be the remaining portion of the LI above. */
+    margin-top: 5px;
+    display: block;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    }
+ul.gallery ul li {/* The height and padding must add up to the height of the LI above.  */
+    /* Turn off and change inherited properties. */
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    }
+ul.gallery li:hover img {/* Enlarge size of image when hovering. */
+    /* Allow image's full dimensions to display. */
+    width:auto;
+    height:auto;
+    /* Position it for ease of use. */
+    position:relative;
+    left:-50%; /* Center the image under the thumbnail. */
+    z-index:100;
+    border: 5px solid rgba(255, 255, 255, 1);
+    top: -5px;
+    -webkit-box-shadow: 1px 1px 5px 1px rgba(68,68,68,.5);
+    box-shadow: 1px 1px 5px 1px rgba(68,68,68,.5);
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    }
+ul.gallery li:hover ul {/* Show the caption block in the popup. */
+    /* Position the caption on top of the image. */
+    position: absolute;
+    top: 0;
+    width: 400px;
+    left: -50%;
+    z-index:150;
+    background-color: transparent;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    }
+ul.gallery li:hover ul li {/* Allow the text to fill the block. */
+    width:400px;
+    display: block;
+    position: relative;
+    background-color: rgba(255, 255, 255, .60);
+    left: 15px;
+    top: 0;
+    height: auto;
+    padding: 5px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    font-weight: bolder;
+    }
+
 
 }
     
@@ -786,7 +852,7 @@ ul.vertical li ul
 { 
     /*display:none;*/ 
     position:absolute; 
-    z-index:111; 
+    z-index:999; 
     right: 100%; 
     top: -100%;
     /* http://stackoverflow.com/questions/3331353/transitions-on-the-display-property
@@ -802,71 +868,14 @@ header {
     background:url("../img/paper-overlay.png") repeat center center, url("../img/creativecommonsuserlittle-mountain-5-pilot-rock-panorama-from-summit-lossy.jpg") no-repeat center 100%;
 }
 
-/*Gallery*/
-ul.gallery {/* The outermost block of the gallery. */}
-ul.gallery li {/* This block inherits mobile properties. 
-    Define a size for the thumbnail blocks. */ 
-    width:100px;
-    height:135px;
-    float:left; /* Sets each block side by side. */
-    position:relative;
-    }  
-ul.gallery li img { /* This block inherits mobile properties. */
-    width:100px;
-    height:100px; /* This gallery method works best with square thumbnails. */
-    }
-ul.gallery ul {/* This block inherits mobile properties.
-    The height should be the remaining portion of the LI above. */
-    width:100%;
-    height:35px;
-    }
-ul.gallery ul li {/* The height and padding must add up to the height of the LI above.  */
-    height:30px;
-    padding-top:5px;
-    /* Turn off and change inherited properties. */
-    border:0;
-    float:none;
-    font-family:;
-    font-size:;
-    line-height:;
-    }
-ul.gallery li:hover img {/* Enlarge size of image when hovering. */
-    /* Allow image's full dimensions to display. */
-    width:auto;
-    height:auto;
-    /* Position it for ease of use. */
-    position:relative;
-    left:-50%; /* Center the image under the thumbnail. */
-    top:-1px; /* Same width as border. */
-    z-index:300;
-    /* Style the popup with these optional properites: */
-    padding:0; 
-    border:;
-    box-shadow:;
-    border-radius:;
-    }
-ul.gallery li:hover ul {/* Show the caption block in the popup. */
-    /* Position the caption on top of the image. */
-    position:relative;
-    z-index:400;
-    /* Style the caption block. */
-    top:;
-    left:;
-    border:;
-    width:;
-    height:;
-    background-color:;
-    }
-ul.gallery li:hover ul li {/* Allow the text to fill the block. */
-    width:auto; 
-    height:;  /* Use pixles or ems. */
-    line-height:; /* Use same size as height. */
-    /* Style the caption text in the popup. */
-    vertical-align:;
-    font-size:;
-    color:;
-    font-weight:;
-    }
+
+
+
+
+
+
+
+
 
 }
 
