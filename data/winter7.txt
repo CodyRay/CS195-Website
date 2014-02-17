@@ -1,6 +1,0 @@
-<?php
-$title = "Winter";
-$author = "";
-$caption = "This is a custom caption";
-$tags = array("water", "trees", "nature" );
-?>

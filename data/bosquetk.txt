@@ -1,6 +1,0 @@
-<?php
-$title = "Descriptive Alt and Title Text";
-$author = "A person's name here";
-$caption = "This is a custom caption";
-$tags = array("trees", "nature" );
-?>
