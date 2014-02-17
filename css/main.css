@@ -85,7 +85,6 @@ textarea {
 /* ==========================================================================
    Browse Happy prompt
    ========================================================================== */
-
 .browsehappy {
     margin: 0.2em 0;
     background: #ccc;
@@ -97,6 +96,7 @@ textarea {
    Author's custom styles
    m_obile
    ========================================================================== */
+ul, li {padding: 0; margin: 0; list-style-type: none;}
 .corners  /*border radius*/
 {
     -webkit-border-radius: 3px;
@@ -188,7 +188,6 @@ textarea {
 .margin-half-tb {margin-top: 7px; margin-bottom: 7px;}
 .margin-half-sides {margin-left: 11px; margin-right: 11px;}
 
-.fit-content {width: 100%; text-align: center; vertical-align: middle;}
 /* 
  * http://www.paulirish.com/2012/box-sizing-border-box-ftw/ 
  * apply a natural box layout model to all elements 
@@ -320,7 +319,7 @@ nav ul {padding: 0 20px; }
     width: 80%;
     margin: 0 auto;
 }
-
+.aside img { max-width: 100%; }
 table {
     width: 90%;
     border-collapse: collapse;
@@ -410,6 +409,8 @@ ul.gallery li ul li {
 }
 
 
+.fit-content {width: 100%; text-align: center; vertical-align: middle;}
+.small-font {font-size: 80%;}
 
 
 

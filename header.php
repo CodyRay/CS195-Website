@@ -42,7 +42,7 @@
                     <li><a href="#" onclick="window.print(); return false;" title="Opens the print dialog box."><i class="fa fa-fw fa-print fa-2x"></i></a></li>
                 </ul> 
             </nav>
-            <header class="boxshadows-lot pad-sides invisible-link">
+            <header class="pad-sides invisible-link">
             <a class="none" href="<?php echo $sitepath;?>"><img src="<?php echo $sitepath; ?>img/epic-photography.png" alt="<?php echo $sitename; ?>" title="<?php echo $sitedescription; ?>"/></a>
             <!--
                 <h1><a href="<?php echo $sitepath;?>"><?php echo $sitename; ?></a></h1>
