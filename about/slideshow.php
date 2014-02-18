@@ -35,7 +35,7 @@
                   </tr>
                   <tr>
                           <th>Other</th>
-                          <td colspan="2"><a href="http://people.oregonstate.edu/~hoeftc/epicphotos/about/contact.php">Let me know</a>, I will add to the list.</td>
+                          <td colspan="2"><a href="http://people.oregonstate.edu/~hoeftc/epicphotos/about/contact/index.php">Let me know</a>, I will add to the list.</td>
                   </tr>
             </tbody>
             <tfoot>

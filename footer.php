@@ -9,7 +9,7 @@
                 <nav id="legal">
                     <ul class="horizontal">
                         <li><?php echo 'Updated ' . date('F j, Y',filemtime($_SERVER['SCRIPT_FILENAME'])) ?></li>
-                        <li><a href="<?php echo $sitepath; ?>about/contact.php">Contact Me</a></li>
+                        <li><a href="<?php echo $sitepath; ?>about/contact/index.php">Contact Me</a></li>
                         <li>Epic Photography &copy; <?php print date('Y') ?> Cody Ray Freeman Hoeft.</li>
                         <li>Images are Property of their Respective Owners.</li>
                         <li class="invisible-link">

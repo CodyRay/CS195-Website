@@ -71,7 +71,7 @@
                     <ul class="vertical"> 
                         <li><a href="<?php echo $sitepath; ?>about/"><i class="fa fa-fw fa-user"></i> About Me</a> 
                         <ul class="transition boxshadows background pad-tb">
-                            <li><a href="<?php echo $sitepath; ?>about/contact.php">Contact Me</a></li> 
+                            <li><a href="<?php echo $sitepath; ?>about/contact/index.php">Contact Me</a></li> 
                             <li><a href="<?php echo $sitepath; ?>about/remove.php">Remove a Photo</a></li> 
                             <li><a href="<?php echo $sitepath; ?>about/share.php">Share This Site</a></li> 
                         </ul>
