@@ -67,7 +67,7 @@
             </div>
             <div id="wrapper">
             <section class="rightcolumn">
-                <nav id="tools" class="boxshadows orange background pad-tb margin-tb">
+                <nav id="tools" class="boxshadows orange background pad-tb margin-tb center-on-mobile shrink-on-mobile">
                     <ul class="vertical"> 
                         <li><a href="<?php echo $sitepath; ?>about/"><i class="fa fa-fw fa-user"></i> About Me</a> 
                         <ul class="transition boxshadows background pad-tb">
