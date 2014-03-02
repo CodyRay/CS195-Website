@@ -9,7 +9,7 @@
         <?php 
             $sitename = "Epic Photography"; 
             $sitedescription = "High Resolution Photos for your Desktop";
-            $sitepath = "http://people.oregonstate.edu/~hoeftc/epicphotos/";
+            $sitepath = "http://people.oregonstate.edu/~hoeftc/epic/";
         ?>
         <title>
             <?php print $pagetitle." | ".$sitename." | ".$sitedescription; ?>
@@ -28,8 +28,7 @@
         <link rel="stylesheet" href="<?php echo $sitepath; ?>css/normalize.css">
         <link rel="stylesheet" href="<?php echo $sitepath; ?>css/main.css">
         <script src="<?php echo $sitepath; ?>js/vendor/modernizr-2.6.2.min.js"></script>
-        <link href='http://fonts.googleapis.com/css?family=Lato:400,900' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Signika:400,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic,700italic|Signika:300,400,600,700|Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
     </head>
     <body>
         <div id="container" class="boxshadows-lot">
@@ -76,14 +75,15 @@
                             <li><a href="<?php echo $sitepath; ?>about/share.php">Share This Site</a></li> 
                         </ul>
                         </li>
+                        <li><a href="<?php echo $sitepath; ?>typography.php"><i class="fa fa-fw fa-camera"></i> Typography</a></li> 
                         <li><a href="<?php echo $sitepath; ?>categories/"><i class="fa fa-fw fa-picture-o"></i> List Photo Categories</a></li> 
                         <li><a href="<?php echo $sitepath; ?>about/slideshow.php"><i class="fa fa-fw fa-desktop"></i> Desktop Slideshows</a></li> 
                     </ul>
                 </nav>
-                <aside class="margin-tb fit-content">
+                <aside class="no-print margin-tb fit-content">
                     <img class="boxshadows" src="<?php echo $sitepath ;?>img/yellowflower.jpg" alt="Yellow Flower on a Blue Sky" title="Ubuntu 10.04 Default Wallpaper &copy; Canonical 2010">
                     <img class="margin-tb boxshadows" src="<?php echo $sitepath ;?>img/7-nasaspacescapes.jpg" alt="Orion Nebula" title="NASA Spitzer Space Telescope &copy; NASA 2010">
                 </aside>
             </section>
             <section id="content">
-            <h1><?php print $pagetitle;?></h1>
+            <h1 class="pagetitle"><?php print $pagetitle;?></h1>

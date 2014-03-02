@@ -46,7 +46,7 @@
             </table>
         <h2>Review of Wallch</h2>
         <figure class="youtube aligncenter">
-            <iframe src="http://www.youtube.com/embed/CnWsC4kIHn8?wmode=transparent"></iframe>
+            <p class="no-print-message"><iframe src="http://www.youtube.com/embed/CnWsC4kIHn8?wmode=transparent"></iframe></p>
             <p><cite>Wallch Review - App Reviews: &copy; Blaine Packer 2012, 5:16 Min Flash Video</cite></p>
         </figure>
     <?php include($root."footer.php");

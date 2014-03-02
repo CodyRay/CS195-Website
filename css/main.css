@@ -96,7 +96,6 @@ textarea {
    Author's custom styles
    m_obile
    ========================================================================== */
-ul, li {padding: 0; margin: 0; list-style-type: none;}
 .corners  /*border radius*/
 {
     -webkit-border-radius: 3px;
@@ -243,13 +242,149 @@ body {
     color: rgba(68,68,68,1);
     background-color: rgba(243,243,243,1);
 }
+p, pre {
+    margin: .8em;
+}
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Signika', 'Lato', sans-serif, helvetica, sans;
     font-weight: 700;
     color: rgba(166,42,1,1);
     line-height: 1.2em;
     text-align: center;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
+h1 {
+    font-size: 315%;
+}
+.pagetitle {
+    font-size: 315%;
+    font-variant: small-caps;
+}
+h2 {
+    font-size: 226%;
+}
+h3 {
+    font-size: 190%;
+}
+h4 {
+    font-size: 162%;
+}
+h5 {
+    font-size: 138%;
+    font-style: italic;
+}
+h6 {
+    font-size: 118%;
+    font-style: italic;
+    text-decoration: underline;
+}
+p {} 
+pre, samp, code {
+    color: rgb(128, 128, 128);
+    font-family: "Ubuntu Mono", monospace;
+}
+pre {
+    overflow: auto;
+    width: auto;
+    border: 2px solid rgb(233, 129, 1);
+    border-left: 10px solid rgb(233, 129, 1);
+    background-color: rgba(243,243,243,1);
+    padding: .2em .6em;
+    -webkit-box-shadow:inset 0 0 5px 1px rgba(68,68,68,.5);
+    box-shadow:inset 0 0 5px 1px rgba(68,68,68,.5);
+}
+
+blockquote {color: rgb(128, 128, 128);}
+cite {color: rgb(128, 128, 128);}
+address {
+    color: rgb(128, 128, 128);
+    padding: 0 0 0 40px;
+    font-size: 95%;
+}
+figure img {
+    padding: 7px;
+    -webkit-box-shadow: 1px 1px 5px 1px rgba(68,68,68,.5);
+    box-shadow: 1px 1px 5px 1px rgba(68,68,68,.5);
+}
+figure figcaption {
+    margin-left: 10px;
+    font-size: 80%;
+}
+
+kbd, abbr {
+    font-weight: 900;
+    text-shadow: 0 0 10px #DF8101;
+    font-family: 'Lato', sans-serif, helvetica, sans;
+}
+mark {
+    background-color: rgb(233, 129, 1);
+}
+span.highlight {
+    font-weight: bolder;
+    color: #A62A01;
+    text-shadow: 0 0 3px #A62A01;
+}
+
+em, i {}
+strong, b {}
+
+ol, ul {
+    margin: 1em 0;
+    padding: 0 0 0 40px;
+    padding-right: 10px;
+    border-right: 6px solid rgb(233, 129, 1);
+}
+li {
+    line-height: 1em;
+    margin-bottom: 0.6em;
+    padding: 3px;
+}
+
+dl {
+    padding-right: 10px;
+    border-right: 6px solid rgb(190, 80, 1);
+}
+dt::after { content: ": ";}
+dt {
+    padding-top: 10px;
+}
+dd {
+    margin-left: 0;
+    padding-left: 40px;
+    background-color: rgba(173, 198, 214,.3);
+
+}
+blockquote {
+    padding-right: 10px;
+    border-right: 6px solid rgb(4, 33, 72);
+}
+blockquote::before {
+    content: "“";
+    float:left;
+    margin-top: 14px;
+    margin-left: -25px;
+    font-size: 400%;
+    color:rgb(4, 33, 72);
+    font-family: "Signika", "Lato", helvetica, sans-serif;
+    text-transform: uppercase;
+}
+blockquote cite{
+    color:  rgba(68,68,68,1);
+}
+
+.dropcap{
+    float:left;
+    font-size:400%;
+    margin-top:14px;
+    margin-right:5px;
+    color:rgb(190, 80, 1);
+    font-family: "Signika", "Lato", helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+.aside ul, .aside li {padding: 0; margin: 0; list-style-type: none;}
+
 div#container {
     margin: 0 auto;
     max-width:1080px; 
@@ -286,17 +421,7 @@ a:active, a:hover, a:focus { /* On Hover change the Background to yellow*/
 a:focus { /* Same thing as hover but add a bounding box */      
     outline:2px dotted rgba(166,42,1,.5 );
 }
-kbd {
-    font-weight: bolder;
-    text-decoration: underline;
-    text-shadow: 0 0 10px #DF8101;
-}
-span.highlight {
-    font-weight: bolder;
-    color: #A62A01;
-    text-shadow: 0 0 3px #A62A01;
-}
-
+nav ul {border: 0; }
 nav a {display: block;}
 nav#legal a {display: initial;}
 nav#skip ul, nav#skip li {margin: 0;}
@@ -304,7 +429,7 @@ nav#skip ul, nav#skip li {margin: 0;}
 nav#main a:link, nav#main a:visited, 
 nav#tools a:link, nav#tools a:visited,
 nav#skip a:link, nav#skip a:visited {
-    font-weight: bold;
+    font-weight: 900;
     font-size: 103%;
     /*Reset Undesirable Changes for navigation links */
      border: 0;
@@ -390,6 +515,7 @@ nav#main a, nav#tools a, nav#skip a {
 }
 
 .aligncenter {text-align: center; margin: 0 auto;}
+.gallery ul, ul.gallery {border: 0; }
 ul.gallery, .gallery li, .gallery ul {margin: 0; padding: 0;list-style-type: none; text-decoration: none; text-align: center;}
 
 ul.gallery li img {
@@ -769,6 +895,8 @@ ul.vertical li li { display: block; }
 footer li {padding: 0 5px;}
 nav#legal a { display: inline; }
 
+nav#legal ul > li:not(:last-child):after { content: " ♦ "; }
+
 .horizontal ul, .horizontal li {padding: 0; margin: 0;}
 
 .leftcolumn, .rightcolumn
@@ -891,9 +1019,29 @@ footer
     clear: both; /*Has to do with columns*/
 }
 
-
+/*Decorative Border Effects*/
 h1, h2, h3, h4, h5, h6 {
     text-align: left;
+}
+h1 {
+    padding-left: 15px;
+    border-left: 20px solid rgb(233, 129, 1);
+}
+.pagetitle {
+    border: 0;
+    padding-left: 0;
+}
+h2 {
+    padding-left: 9px;
+    border-left: 12px solid rgb(190, 80, 1);
+}
+h3 {
+    padding-left: 6px;
+    border-left: 8px solid rgb(166, 42, 1);
+}
+h4 {
+    padding-left: 4px;
+    border-left: 5px solid rgb(4, 33, 72);
 }
 
 /*Goes around sidebars and content to give them space from the sides*/
@@ -1167,19 +1315,26 @@ header {
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
 
-@media print {
+@media print { 
     * {
         background: transparent !important;
         color: #000 !important; /* Black prints faster: h5bp.com/s */
         box-shadow: none !important;
         text-shadow: none !important;
+        border: 0 !important;
+        text-size: 11px;
+        line-height: 1em;
+        border-width: 0;
+        margin: 0;
+        padding: 0;
+        float: none;
     }
 
     a,
     a:visited {
         text-decoration: underline;
     }
-
+/*
     a[href]:after {
         content: " (" attr(href) ")";
     }
@@ -1198,9 +1353,11 @@ header {
         content: "";
     }
 
-    pre,
-    blockquote {
+    pre {
         border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+    blockquote {
         page-break-inside: avoid;
     }
 
@@ -1214,31 +1371,79 @@ header {
     }
 
     img {
-        max-width: 100% !important;
+        width: auto;
     }
 
     @page {
         margin: 0.5cm;
     }
 
-    p,
-    h2,
-    h3 {
+    p {
         orphans: 3;
         widows: 3;
     }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
+/*Use Points*/
+body {
+    /*Give the Container a little bit of Space on the sides and bottom*/
+    font-family: garamond, sans-serif, helvetica, sans;
+    font-size: 11pt;
+    line-height: 1.2em;
 }
 
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        page-break-after: avoid;
+        orphans: 3;
+        widows: 3;
+        margin: 0;
+        padding: 0;
+    }
+    p {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+    }
+    img { margin: 0 auto; text-align: center;}
+    header * { display: none;}
+    header::before {content: url('../img/epic-photography-bw.png') };
+    header img { /*Doesn't Work, Don't Know Why*/
+        width: 250pt;
+        height: auto;
+    }
+    p.no-print-message * {display: none;} 
+    p.no-print-message::before {content: "Sorry, the following media cannot be printed:";}
+    .no-print {display: none;}
+
+
+    form, fieldset, legend, label, input, select, option, textarea, fieldset legend {
+        margin: 3pt 0;
+        padding: 0;
+        height: auto;
+    }
+
+    div.inline label,
+    div.inline input {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    ul.gallery li img {
+        width: 250pt;
+        height: auto;
+    }
+
+    ul.gallery li {
+        display: inline-block;
+    }
+    nav {display: none; }
+    
 
 
 
 
 
-
-
-
+}
