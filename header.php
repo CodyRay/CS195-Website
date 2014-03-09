@@ -27,6 +27,8 @@
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
         <link rel="stylesheet" href="<?php echo $sitepath; ?>css/normalize.css">
         <link rel="stylesheet" href="<?php echo $sitepath; ?>css/main.css">
+        <link rel="stylesheet/less" type="text/css" href="<?php echo $sitepath; ?>css/style.less" />
+        <script src="<?php echo $sitepath; ?>js/less.js" type="text/javascript"></script>
         <script src="<?php echo $sitepath; ?>js/vendor/modernizr-2.6.2.min.js"></script>
         <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic,700italic|Signika:300,400,600,700|Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
     </head>
@@ -76,6 +78,7 @@
                         </ul>
                         </li>
                         <li><a href="<?php echo $sitepath; ?>typography.php"><i class="fa fa-fw fa-camera"></i> Typography</a></li> 
+                        <li><a href="<?php echo $sitepath; ?>less.php"><i class="fa fa-fw fa-compress"></i> LESS</a></li> 
                         <li><a href="<?php echo $sitepath; ?>categories/"><i class="fa fa-fw fa-picture-o"></i> List Photo Categories</a></li> 
                         <li><a href="<?php echo $sitepath; ?>about/slideshow.php"><i class="fa fa-fw fa-desktop"></i> Desktop Slideshows</a></li> 
                     </ul>
