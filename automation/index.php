@@ -3,12 +3,17 @@
     $root = "../"; 
     include($root."images.php");
     include($root."header.php");?>
-    <p>Note that all of this images are missing important information like titles and alt tags</p>
+    <p>Note that all of these images are missing important information like titles and alt tags</p>
+<figure class="transition">
+    <ul class="gallery invisible-link">
+<?php foreach($unsorted as $image) : ?>
+        <li><?php getimage($image,'column', $image_array); ?>
+            <ul><li><?php getcaption($image, $image_array); ?></li></ul>
+        </li>
+<?php endforeach; ?>
+    </ul>
+</figure>
 <?php    
-    foreach( $unsorted as $image ) :
-    getimage( $image, "column", $image_array ); 
-    echo $image_array[$image]['caption'];
-    endforeach; 
     include($root."footer.php");
 
 ?>

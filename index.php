@@ -1,4 +1,4 @@
-<?php $pagetitle="Welcome to Epic Photographpy"; ?>
+<?php $pagetitle="Welcome to Epic Photography"; ?>
 <?php 
     $root = "";
     include($root."images.php");
