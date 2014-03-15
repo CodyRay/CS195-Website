@@ -1,0 +1,25 @@
+<?php /*
+DCT Encode Version              : 100
+APP14 Flags 0                   : (none)
+APP14 Flags 1                   : (none)
+Color Transform                 : YCbCr
+Exif Byte Order                 : Big-endian (Motorola, MM)
+Image Description               : Image of the Cassiopeia A Supernova Remnant from NASA's Chandra X-ray Observatory
+Artist                          : NASA
+Copyright                       : NASA
+XP Title                        : Image of the Cassiopeia A Supernova Remnant from NASA's Chandra X-ray Observatory
+XP Author                       : NASA
+XP Subject                      : Image of the Cassiopeia A Supernova Remnant from NASA's Chandra X-ray Observatory
+Padding                         : (Binary data 2060 bytes, use -b option to extract)
+About                           : uuid:faf5bdd5-ba3d-11da-ad31-d33d75182f1b
+Creator                         : NASA
+Rights                          : NASA
+Title                           : Image of the Cassiopeia A Supernova Remnant from NASA's Chandra X-ray Observatory
+Description                     : Image of the Cassiopeia A Supernova Remnant from NASA's Chandra X-ray Observatory
+*/
+$title = "Image of the Cassiopeia A Supernova Remnant from NASA's Chandra X-ray Observatory";
+$author= "NASA";
+$caption= "Cassiopeia A Supernova Remnant";
+$tags=array("astronomy"
+ );
+?>

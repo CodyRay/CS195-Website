@@ -1,0 +1,25 @@
+<?php /*
+DCT Encode Version              : 100
+APP14 Flags 0                   : (none)
+APP14 Flags 1                   : (none)
+Color Transform                 : YCbCr
+Exif Byte Order                 : Big-endian (Motorola, MM)
+Image Description               : Image of M82 or the Cigar Galaxy from NASA's Spitzer and Hubble Space Telescopes, and NASA's Chandra X-ray Observatory
+Artist                          : NASA
+Copyright                       : NASA
+XP Title                        : Image of M82 or the Cigar Galaxy from NASA's Spitzer and Hubble Space Telescopes, and NASA's Chandra X-ray Observatory
+XP Author                       : NASA
+XP Subject                      : Image of M82 or the Cigar Galaxy from NASA's Spitzer and Hubble Space Telescopes, and NASA's Chandra X-ray Observatory
+Padding                         : (Binary data 1438 bytes, use -b option to extract)
+About                           : uuid:faf5bdd5-ba3d-11da-ad31-d33d75182f1b
+Title                           : Image of M82 or the Cigar Galaxy from NASA's Spitzer and Hubble Space Telescopes, and NASA's Chandra X-ray Observatory
+Description                     : Image of M82 or the Cigar Galaxy from NASA's Spitzer and Hubble Space Telescopes, and NASA's Chandra X-ray Observatory
+Creator                         : NASA
+Rights                          : NASA
+*/
+$title = "Image of M82 or the Cigar Galaxy from NASA's Spitzer and Hubble Space Telescopes, and NASA's Chandra X-ray Observatory";
+$author= "NASA";
+$caption= "Image of M82 or the Cigar Galaxy from NASA's Spitzer and Hubble Space Telescopes, and NASA's Chandra X-ray Observatory";
+$tags=array("astronomy"
+ );
+?>

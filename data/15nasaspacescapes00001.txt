@@ -1,0 +1,25 @@
+<?php /*
+DCT Encode Version              : 100
+APP14 Flags 0                   : (none)
+APP14 Flags 1                   : (none)
+Color Transform                 : YCbCr
+Exif Byte Order                 : Big-endian (Motorola, MM)
+Image Description               : Image of the cosmic microwave background (echoes of the Big Bang) from NASA's WMAP satellite
+Artist                          : NASA
+Copyright                       : NASA
+XP Title                        : Image of the cosmic microwave background (echoes of the Big Bang) from NASA's WMAP satellite
+XP Author                       : NASA
+XP Subject                      : Image of the cosmic microwave background (echoes of the Big Bang) from NASA's WMAP satellite
+Padding                         : (Binary data 2060 bytes, use -b option to extract)
+About                           : uuid:faf5bdd5-ba3d-11da-ad31-d33d75182f1b
+Creator                         : NASA
+Rights                          : NASA
+Title                           : Image of the cosmic microwave background (echoes of the Big Bang) from NASA's WMAP satellite
+Description                     : Image of the cosmic microwave background (echoes of the Big Bang) from NASA's WMAP satellite
+*/
+$title = "Image of the cosmic microwave background (echoes of the Big Bang) from NASA's WMAP satellite";
+$author= "NASA";
+$caption= "Image of the cosmic microwave background (echoes of the Big Bang) from NASA's WMAP satellite";
+$tags=array("astronomy"
+ );
+?>
