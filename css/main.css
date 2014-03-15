@@ -514,6 +514,7 @@ nav#main a, nav#tools a, nav#skip a {
     margin: 0;
 }
 
+figure .gallery img {-webkit-box-shadow: none; box-shadow: none; }
 .aligncenter {text-align: center; margin: 0 auto;}
 .gallery ul, ul.gallery {border: 0; }
 ul.gallery, .gallery li, .gallery ul {margin: 0; padding: 0;list-style-type: none; text-decoration: none; text-align: center;}
