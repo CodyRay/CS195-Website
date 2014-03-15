@@ -1,0 +1,15 @@
+<?php /*
+Exif Byte Order                 : Little-endian (Intel, II)
+Copyright                       : kebe
+Current IPTC Digest             : 03861c5f2cf6a3b6674f749ff3dffdec
+Coded Character Set             : UTF8
+Application Record Version      : 2
+Copyright Notice                : kebe
+IPTC Digest                     : 03861c5f2cf6a3b6674f749ff3dffdec
+*/
+$title = "Flock of Birds";
+$author= "kebe";
+$caption= "Flock of Birds";
+$tags=array("nature"
+ );
+?>

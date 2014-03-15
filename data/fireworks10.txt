@@ -1,0 +1,24 @@
+<?php /*
+DCT Encode Version              : 100
+APP14 Flags 0                   : (none)
+APP14 Flags 1                   : (none)
+Color Transform                 : YCbCr
+Exif Byte Order                 : Big-endian (Motorola, MM)
+Image Description               : Fireworks
+Artist                          : Ocean/Corbis
+Copyright                       : Ocean/Corbis
+XP Title                        : Fireworks
+XP Author                       : Ocean/Corbis
+Padding                         : (Binary data 2060 bytes, use -b option to extract)
+About                           : uuid:faf5bdd5-ba3d-11da-ad31-d33d75182f1b
+Creator                         : Ocean/Corbis
+Rights                          : Ocean/Corbis
+Title                           : Fireworks
+Description                     : Fireworks
+*/
+$title = "Fireworks";
+$author= "Ocean/Corbis";
+$caption= "Fireworks";
+$tags=array("fireworks"
+ );
+?>

@@ -1,0 +1,24 @@
+<?php /*
+DCT Encode Version              : 100
+APP14 Flags 0                   : (none)
+APP14 Flags 1                   : (none)
+Color Transform                 : YCbCr
+Exif Byte Order                 : Big-endian (Motorola, MM)
+Image Description               : Firework display
+Artist                          : Image Source/Corbis
+Copyright                       : Image Source/Corbis
+XP Title                        : Firework display
+XP Author                       : Image Source/Corbis
+Padding                         : (Binary data 2060 bytes, use -b option to extract)
+About                           : uuid:faf5bdd5-ba3d-11da-ad31-d33d75182f1b
+Creator                         : Image Source/Corbis
+Rights                          : Image Source/Corbis
+Title                           : Firework display
+Description                     : Firework display
+*/
+$title = "Firework display";
+$author= "Image Source/Corbis";
+$caption= "Firework display";
+$tags=array("fireworks"
+ );
+?>

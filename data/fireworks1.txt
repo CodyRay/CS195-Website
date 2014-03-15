@@ -1,0 +1,51 @@
+<?php /*
+DCT Encode Version              : 100
+APP14 Flags 0                   : (none)
+APP14 Flags 1                   : (none)
+Color Transform                 : YCbCr
+Exif Byte Order                 : Big-endian (Motorola, MM)
+Image Description               : Fireworks above the Opera House and Harbour Bridge, Sydney, Australia
+Artist                          : Paul Steel/CORBIS
+Copyright                       : Paul Steel/CORBIS
+XP Title                        : Fireworks above the Opera House and Harbour Bridge, Sydney, Australia
+XP Author                       : Paul Steel/CORBIS
+XP Subject                      : Fireworks above the Opera House and Harbour Bridge, Sydney, Australia
+Padding                         : (Binary data 1698 bytes, use -b option to extract)
+Profile CMM Type                : ADBE
+Profile Version                 : 2.1.0
+Profile Class                   : Display Device Profile
+Color Space Data                : RGB
+Profile Connection Space        : XYZ
+Profile Date Time               : 2000:02:03 16:15:01
+Profile File Signature          : acsp
+Primary Platform                : Apple Computer Inc.
+CMM Flags                       : Not Embedded, Independent
+Device Manufacturer             : none
+Device Model                    : 
+Device Attributes               : Reflective, Glossy, Positive, Color
+Rendering Intent                : Perceptual
+Connection Space Illuminant     : 0.9642 1 0.82491
+Profile Creator                 : ADBE
+Profile ID                      : 0
+Profile Copyright               : (c) 2000 Adobe Systems Inc.
+Profile Description             : Custom RGB
+Media White Point               : 0.96429 1 0.8251
+Media Black Point               : 0 0 0
+Red Tone Reproduction Curve     : (Binary data 14 bytes, use -b option to extract)
+Green Tone Reproduction Curve   : (Binary data 14 bytes, use -b option to extract)
+Blue Tone Reproduction Curve    : (Binary data 14 bytes, use -b option to extract)
+Red Matrix Column               : 0.53229 0.29152 0.0361
+Green Matrix Column             : 0.30634 0.65622 0.12384
+Blue Matrix Column              : 0.12558 0.05226 0.66496
+About                           : uuid:faf5bdd5-ba3d-11da-ad31-d33d75182f1b
+Title                           : Fireworks above the Opera House and Harbour Bridge, Sydney, Australia
+Description                     : Fireworks above the Opera House and Harbour Bridge, Sydney, Australia
+Creator                         : Paul Steel/CORBIS
+Rights                          : Paul Steel/CORBIS
+*/
+$title = "Fireworks above the Opera House and Harbour Bridge, Sydney, Australia";
+$author= "Paul Steel/CORBIS";
+$caption= "Fireworks above the Opera House and Harbour Bridge, Sydney, Australia";
+$tags=array("fireworks"
+ );
+?>

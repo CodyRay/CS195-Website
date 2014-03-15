@@ -1,0 +1,24 @@
+<?php /*
+DCT Encode Version              : 100
+APP14 Flags 0                   : (none)
+APP14 Flags 1                   : (none)
+Color Transform                 : YCbCr
+Exif Byte Order                 : Big-endian (Motorola, MM)
+Image Description               : Reserva Biológica Bosque Nuboso Monteverde (Monteverde Cloud Forest Preserve), Costa Rica
+Artist                          : Mike Lanzetta/Flickr/Getty Images
+Copyright                       : Mike Lanzetta/Flickr/Getty Images
+XP Title                        : Reserva Biológica Bosque Nuboso Monteverde (Monteverde Cloud Forest Preserve), Costa Rica
+XP Author                       : Mike Lanzetta/Flickr/Getty Images
+Padding                         : (Binary data 2060 bytes, use -b option to extract)
+About                           : uuid:faf5bdd5-ba3d-11da-ad31-d33d75182f1b
+Creator                         : Mike Lanzetta/Flickr/Getty Images
+Rights                          : Mike Lanzetta/Flickr/Getty Images
+Title                           : Reserva Biológica Bosque Nuboso Monteverde (Monteverde Cloud Forest Preserve), Costa Rica
+Description                     : Reserva Biológica Bosque Nuboso Monteverde (Monteverde Cloud Forest Preserve), Costa Rica
+*/
+$title = "Reserva Biológica Bosque Nuboso Monteverde (Monteverde Cloud Forest Preserve), Costa Rica";
+$author= "Mike Lanzetta/Flickr/Getty Images";
+$caption= "Reserva Biológica Bosque Nuboso Monteverde (Monteverde Cloud Forest Preserve), Costa Rica";
+$tags=array("nature", "trees"
+ );
+?>

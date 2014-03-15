@@ -1,0 +1,24 @@
+<?php /*
+DCT Encode Version              : 100
+APP14 Flags 0                   : (none)
+APP14 Flags 1                   : (none)
+Color Transform                 : YCbCr
+Exif Byte Order                 : Big-endian (Motorola, MM)
+Image Description               : Stream in a forest
+Artist                          : Evgeny Kuklev/Vetta/Getty Images
+Copyright                       : Evgeny Kuklev/Vetta/Getty Images
+XP Title                        : Stream in a forest
+XP Author                       : Evgeny Kuklev/Vetta/Getty Images
+Padding                         : (Binary data 2060 bytes, use -b option to extract)
+About                           : uuid:faf5bdd5-ba3d-11da-ad31-d33d75182f1b
+Creator                         : Evgeny Kuklev/Vetta/Getty Images
+Rights                          : Evgeny Kuklev/Vetta/Getty Images
+Title                           : Stream in a forest
+Description                     : Stream in a forest
+*/
+$title = "Stream in a forest";
+$author= "Evgeny Kuklev/Vetta/Getty Images";
+$caption= "Stream in a forest";
+$tags=array("trees", "nature", "water"
+ );
+?>

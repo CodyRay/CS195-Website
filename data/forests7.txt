@@ -1,0 +1,24 @@
+<?php /*
+DCT Encode Version              : 100
+APP14 Flags 0                   : (none)
+APP14 Flags 1                   : (none)
+Color Transform                 : YCbCr
+Exif Byte Order                 : Big-endian (Motorola, MM)
+Image Description               : First sunlight touching tips of firs in alpine forest of Zinal, Valais, Switzerland
+Artist                          : Thierry Hennet/Flickr/Getty Images
+Copyright                       : Thierry Hennet/Flickr/Getty Images
+XP Title                        : First sunlight touching tips of firs in alpine forest of Zinal, Valais, Switzerland
+XP Author                       : Thierry Hennet/Flickr/Getty Images
+Padding                         : (Binary data 2060 bytes, use -b option to extract)
+About                           : uuid:faf5bdd5-ba3d-11da-ad31-d33d75182f1b
+Creator                         : Thierry Hennet/Flickr/Getty Images
+Rights                          : Thierry Hennet/Flickr/Getty Images
+Title                           : First sunlight touching tips of firs in alpine forest of Zinal, Valais, Switzerland
+Description                     : First sunlight touching tips of firs in alpine forest of Zinal, Valais, Switzerland
+*/
+$title = "First sunlight touching tips of firs in alpine forest of Zinal, Valais, Switzerland";
+$author= "Thierry Hennet/Flickr/Getty Images";
+$caption= "First sunlight touching tips of firs in alpine forest of Zinal, Valais, Switzerland";
+$tags=array("trees", "nature"
+ );
+?>

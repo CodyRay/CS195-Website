@@ -1,0 +1,24 @@
+<?php /*
+DCT Encode Version              : 100
+APP14 Flags 0                   : (none)
+APP14 Flags 1                   : (none)
+Color Transform                 : YCbCr
+Exif Byte Order                 : Big-endian (Motorola, MM)
+Image Description               : Autumn frost
+Artist                          : Duncan Lawler
+Copyright                       : Duncan Lawler
+XP Title                        : Autumn frost
+XP Author                       : Duncan Lawler
+Padding                         : (Binary data 2060 bytes, use -b option to extract)
+About                           : uuid:faf5bdd5-ba3d-11da-ad31-d33d75182f1b
+Creator                         : Duncan Lawler
+Rights                          : Duncan Lawler
+Title                           : Autumn frost
+Description                     : Autumn frost
+*/
+$title = "Autumn frost";
+$author= "Duncan Lawler";
+$caption= "Autumn frost";
+$tags=array("nature"
+ );
+?>

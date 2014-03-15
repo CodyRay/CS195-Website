@@ -1,0 +1,9 @@
+<?php /*
+Exif Byte Order                 : Little-endian (Intel, II)
+*/
+$title = "";
+$author= "";
+$caption= "";
+$tags=array("mankind"
+ );
+?>

@@ -1,0 +1,24 @@
+<?php /*
+DCT Encode Version              : 100
+APP14 Flags 0                   : (none)
+APP14 Flags 1                   : (none)
+Color Transform                 : YCbCr
+Exif Byte Order                 : Big-endian (Motorola, MM)
+Image Description               : Fireworks over the Tower Bridge, London, England, UK
+Artist                          : Steven Vidler/Eurasia Press/Corbis
+Copyright                       : Steven Vidler/Eurasia Press/Corbis
+XP Title                        : Fireworks over the Tower Bridge, London, England, UK
+XP Author                       : Steven Vidler/Eurasia Press/Corbis
+Padding                         : (Binary data 2060 bytes, use -b option to extract)
+About                           : uuid:faf5bdd5-ba3d-11da-ad31-d33d75182f1b
+Creator                         : Steven Vidler/Eurasia Press/Corbis
+Rights                          : Steven Vidler/Eurasia Press/Corbis
+Title                           : Fireworks over the Tower Bridge, London, England, UK
+Description                     : Fireworks over the Tower Bridge, London, England, UK
+*/
+$title = "Fireworks over the Tower Bridge, London, England, UK";
+$author= "Steven Vidler/Eurasia Press/Corbis";
+$caption= "Fireworks over the Tower Bridge, London, England, UK";
+$tags=array("fireworks"
+ );
+?>

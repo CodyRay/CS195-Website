@@ -1,0 +1,24 @@
+<?php /*
+DCT Encode Version              : 100
+APP14 Flags 0                   : (none)
+APP14 Flags 1                   : (none)
+Color Transform                 : YCbCr
+Exif Byte Order                 : Big-endian (Motorola, MM)
+Image Description               : Spring forest with sun, Slovakia
+Artist                          : Peter Zvonar/Flickr/Getty Images
+Copyright                       : Peter Zvonar/Flickr/Getty Images
+XP Title                        : Spring forest with sun, Slovakia
+XP Author                       : Peter Zvonar/Flickr/Getty Images
+Padding                         : (Binary data 2060 bytes, use -b option to extract)
+About                           : uuid:faf5bdd5-ba3d-11da-ad31-d33d75182f1b
+Creator                         : Peter Zvonar/Flickr/Getty Images
+Rights                          : Peter Zvonar/Flickr/Getty Images
+Title                           : Spring forest with sun, Slovakia
+Description                     : Spring forest with sun, Slovakia
+*/
+$title = "Spring forest with sun, Slovakia";
+$author= "Peter Zvonar/Flickr/Getty Images";
+$caption= "Spring forest with sun, Slovakia";
+$tags=array("nature", "trees"
+ );
+?>

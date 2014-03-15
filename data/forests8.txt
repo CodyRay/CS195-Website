@@ -1,0 +1,24 @@
+<?php /*
+DCT Encode Version              : 100
+APP14 Flags 0                   : (none)
+APP14 Flags 1                   : (none)
+Color Transform                 : YCbCr
+Exif Byte Order                 : Big-endian (Motorola, MM)
+Image Description               : Green ferns, Blue Mountains, New South Wales, Australia
+Artist                          : Mike Hone/Flickr RF/Getty Images
+Copyright                       : Mike Hone/Flickr RF/Getty Images
+XP Title                        : Green ferns, Blue Mountains, New South Wales, Australia
+XP Author                       : Mike Hone/Flickr RF/Getty Images
+Padding                         : (Binary data 2060 bytes, use -b option to extract)
+About                           : uuid:faf5bdd5-ba3d-11da-ad31-d33d75182f1b
+Creator                         : Mike Hone/Flickr RF/Getty Images
+Rights                          : Mike Hone/Flickr RF/Getty Images
+Title                           : Green ferns, Blue Mountains, New South Wales, Australia
+Description                     : Green ferns, Blue Mountains, New South Wales, Australia
+*/
+$title = "Green ferns, Blue Mountains, New South Wales, Australia";
+$author= "Mike Hone/Flickr RF/Getty Images";
+$caption= "Green ferns, Blue Mountains, New South Wales, Australia";
+$tags=array("trees", "nature"
+ );
+?>

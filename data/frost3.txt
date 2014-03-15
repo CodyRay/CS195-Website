@@ -1,0 +1,24 @@
+<?php /*
+DCT Encode Version              : 100
+APP14 Flags 0                   : (none)
+APP14 Flags 1                   : (none)
+Color Transform                 : YCbCr
+Exif Byte Order                 : Big-endian (Motorola, MM)
+Image Description               : Frosted flowers
+Artist                          : Duncan Lawler
+Copyright                       : Duncan Lawler
+XP Title                        : Frosted flowers
+XP Author                       : Duncan Lawler
+Padding                         : (Binary data 2060 bytes, use -b option to extract)
+About                           : uuid:faf5bdd5-ba3d-11da-ad31-d33d75182f1b
+Creator                         : Duncan Lawler
+Rights                          : Duncan Lawler
+Title                           : Frosted flowers
+Description                     : Frosted flowers
+*/
+$title = "Frosted flowers";
+$author= "Duncan Lawler";
+$caption= "Frosted flowers";
+$tags=array("nature"
+ );
+?>

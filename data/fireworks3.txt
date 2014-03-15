@@ -1,0 +1,24 @@
+<?php /*
+DCT Encode Version              : 100
+APP14 Flags 0                   : (none)
+APP14 Flags 1                   : (none)
+Color Transform                 : YCbCr
+Exif Byte Order                 : Big-endian (Motorola, MM)
+Image Description               : Fireworks on New Year's Eve, Singapore
+Artist                          : Souvik Bhattacharya/Flickr/Getty Images
+Copyright                       : Souvik Bhattacharya/Flickr/Getty Images
+XP Title                        : Fireworks on New Year's Eve, Singapore
+XP Author                       : Souvik Bhattacharya/Flickr/Getty Images
+Padding                         : (Binary data 2060 bytes, use -b option to extract)
+About                           : uuid:faf5bdd5-ba3d-11da-ad31-d33d75182f1b
+Creator                         : Souvik Bhattacharya/Flickr/Getty Images
+Rights                          : Souvik Bhattacharya/Flickr/Getty Images
+Title                           : Fireworks on New Year's Eve, Singapore
+Description                     : Fireworks on New Year's Eve, Singapore
+*/
+$title = "Fireworks on New Year's Eve, Singapore";
+$author= "Souvik Bhattacharya/Flickr/Getty Images";
+$caption= "Fireworks on New Year's Eve, Singapore";
+$tags=array("fireworks"
+ );
+?>

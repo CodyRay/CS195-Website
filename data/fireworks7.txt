@@ -1,0 +1,24 @@
+<?php /*
+DCT Encode Version              : 100
+APP14 Flags 0                   : (none)
+APP14 Flags 1                   : (none)
+Color Transform                 : YCbCr
+Exif Byte Order                 : Big-endian (Motorola, MM)
+Image Description               : Fireworks Display at New Year Celebration
+Artist                          : Lasse Pettersson/Nordicphotos/Corbis
+Copyright                       : Lasse Pettersson/Nordicphotos/Corbis
+XP Title                        : Fireworks Display at New Year Celebration
+XP Author                       : Lasse Pettersson/Nordicphotos/Corbis
+Padding                         : (Binary data 2060 bytes, use -b option to extract)
+About                           : uuid:faf5bdd5-ba3d-11da-ad31-d33d75182f1b
+Creator                         : Lasse Pettersson/Nordicphotos/Corbis
+Rights                          : Lasse Pettersson/Nordicphotos/Corbis
+Title                           : Fireworks Display at New Year Celebration
+Description                     : Fireworks Display at New Year Celebration
+*/
+$title = "Fireworks Display at New Year Celebration";
+$author= "Lasse Pettersson/Nordicphotos/Corbis";
+$caption= "Fireworks Display at New Year Celebration";
+$tags=array("fireworks"
+ );
+?>

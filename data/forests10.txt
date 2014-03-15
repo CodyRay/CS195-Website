@@ -1,0 +1,24 @@
+<?php /*
+DCT Encode Version              : 100
+APP14 Flags 0                   : (none)
+APP14 Flags 1                   : (none)
+Color Transform                 : YCbCr
+Exif Byte Order                 : Big-endian (Motorola, MM)
+Image Description               : Beech trees in row with snow and autumn leaves on ground, U.K.
+Artist                          : Sasha Bell/Flickr/Getty Images
+Copyright                       : Sasha Bell/Flickr/Getty Images
+XP Title                        : Beech trees in row with snow and autumn leaves on ground, U.K.
+XP Author                       : Sasha Bell/Flickr/Getty Images
+Padding                         : (Binary data 2060 bytes, use -b option to extract)
+About                           : uuid:faf5bdd5-ba3d-11da-ad31-d33d75182f1b
+Creator                         : Sasha Bell/Flickr/Getty Images
+Rights                          : Sasha Bell/Flickr/Getty Images
+Title                           : Beech trees in row with snow and autumn leaves on ground, U.K.
+Description                     : Beech trees in row with snow and autumn leaves on ground, U.K.
+*/
+$title = "Beech trees in row with snow and autumn leaves on ground, U.K.";
+$author= "Sasha Bell/Flickr/Getty Images";
+$caption= "Beech trees in row with snow and autumn leaves on ground, U.K.";
+$tags=array("nature", "trees"
+ );
+?>

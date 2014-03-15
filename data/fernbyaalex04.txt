@@ -1,0 +1,170 @@
+<?php /*
+Exif Byte Order                 : Big-endian (Motorola, MM)
+Make                            : NIKON CORPORATION
+Camera Model Name               : NIKON D3000
+Orientation                     : Horizontal (normal)
+Software                        : GIMP 2.6.8
+Modify Date                     : 2010:08:25 13:58:30
+Y Cb Cr Positioning             : Co-sited
+Exposure Time                   : 1/50
+F Number                        : 5.6
+Exposure Program                : Manual
+ISO                             : 400
+Exif Version                    : 0221
+Date/Time Original              : 2010:07:18 19:54:50
+Create Date                     : 2010:07:18 19:54:50
+Components Configuration        : Y, Cb, Cr, -
+Compressed Bits Per Pixel       : 4
+Exposure Compensation           : 0
+Max Aperture Value              : 5.7
+Metering Mode                   : Spot
+Light Source                    : Unknown
+Flash                           : No Flash
+Focal Length                    : 105.0 mm
+Maker Note Version              : 2.10
+Quality                         : Fine
+White Balance                   : Auto
+Focus Mode                      : AF-A
+Flash Setting                   : Rear
+Flash Type                      : 
+White Balance Fine Tune         : 0 0
+WB RB Levels                    : 2.015625 1.56640625 1 1
+Program Shift                   : 0
+Exposure Difference             : -0.8
+Warning                         : Bad PreviewIFD directory
+Flash Exposure Compensation     : 0
+ISO Setting                     : 400
+Image Boundary                  : 0 0 3872 2592
+External Flash Exposure Comp    : 0
+Flash Exposure Bracket Value    : 0.0
+Exposure Bracket Value          : +162113114
+Crop Hi Speed                   : Off (3904x2616 cropped to 3904x2616 at pixel 0,0)
+Exposure Tuning                 : 0
+Serial Number                   : 6255347
+VR Info Version                 : 0100
+Vibration Reduction             : On
+Active D-Lighting               : Auto
+Picture Control Version         : 0100
+Picture Control Name            : Vivid
+Picture Control Base            : Vivid
+Picture Control Adjust          : Default Settings
+Picture Control Quick Adjust    : Normal
+Brightness                      : Normal
+Hue Adjustment                  : None
+Filter Effect                   : n/a
+Toning Effect                   : n/a
+Toning Saturation               : n/a
+Timezone                        : +01:00
+Daylight Savings                : Yes
+Date Display Format             : D/M/Y
+ISO Expansion                   : Off
+ISO2                            : 400
+ISO Expansion 2                 : Off
+Lens Type                       : G VR
+Lens                            : 18-105mm f/3.5-5.6
+Flash Mode                      : Did Not Fire
+Shooting Mode                   : Continuous
+Shot Info Version               : 0217
+Firmware Version                : 1.00e
+Noise Reduction                 : Off
+Color Balance Unknown           : 0213[...]
+Lens Data Version               : 0204
+Exit Pupil Position             : 107.8 mm
+AF Aperture                     : 5.7
+Focus Position                  : 0x11
+Focus Distance                  : 0.50 m
+Lens ID Number                  : 158
+Lens F Stops                    : 5.33
+Min Focal Length                : 18.3 mm
+Max Focal Length                : 106.8 mm
+Max Aperture At Min Focal       : 3.6
+Max Aperture At Max Focal       : 5.7
+MCU Version                     : 160
+Effective Max Aperture          : 5.7
+Retouch History                 : None
+Image Data Size                 : 4797646
+Shutter Count                   : 6357
+Flash Info Version              : 0103
+Flash Source                    : None
+External Flash Firmware         : n/a
+External Flash Flags            : (none)
+Flash Commander Mode            : Off
+Flash Control Mode              : Off
+Flash Compensation              : 0
+Flash GN Distance               : 0
+Flash Color Filter              : None
+Flash Group A Control Mode      : Off
+Flash Group B Control Mode      : Off
+Flash Group C Control Mode      : Off
+Flash Group A Compensation      : 0
+Flash Group B Compensation      : 0
+Flash Group C Compensation      : 0
+Vari Program                    : 
+Multi Exposure Version          : 0100
+Multi Exposure Mode             : Off
+Multi Exposure Shots            : 0
+Multi Exposure Auto Gain        : Off
+High ISO Noise Reduction        : Off
+Power Up Time                   : 2010:07:18 19:49:52
+AF Info 2 Version               : 0100
+Contrast Detect AF              : Off
+AF Area Mode                    : Single Area
+Phase Detect AF                 : On (11-point)
+Primary AF Point                : Mid-right
+AF Points Used                  : Mid-right
+Contrast Detect AF In Focus     : No
+File Info Version               : 0100
+Directory Number                : 101
+File Number                     : 0396
+User Comment                    : 
+Sub Sec Time                    : 50
+Sub Sec Time Original           : 50
+Sub Sec Time Digitized          : 50
+Flashpix Version                : 0100
+Color Space                     : sRGB
+Exif Image Width                : 0
+Exif Image Height               : 0
+Interoperability Index          : R98 - DCF basic file (sRGB)
+Interoperability Version        : 0100
+Sensing Method                  : One-chip color area
+File Source                     : Digital Camera
+Scene Type                      : Directly photographed
+CFA Pattern                     : [Green,Blue][Red,Green]
+Custom Rendered                 : Normal
+Exposure Mode                   : Manual
+Digital Zoom Ratio              : 1
+Focal Length In 35mm Format     : 157 mm
+Scene Capture Type              : Standard
+Gain Control                    : Low gain up
+Contrast                        : Normal
+Saturation                      : Normal
+Sharpness                       : Normal
+Subject Distance Range          : Unknown
+Compression                     : JPEG (old-style)
+Thumbnail Offset                : 4760
+Thumbnail Length                : 4437
+Aperture                        : 5.6
+Auto Focus                      : On
+Blue Balance                    : 1.566406
+Lens ID                         : AF-S DX VR Zoom-Nikkor 18-105mm f/3.5-5.6G ED
+Lens                            : 18-105mm f/3.5-5.6 G VR
+Red Balance                     : 2.015625
+Scale Factor To 35 mm Equivalent: 1.5
+Shutter Speed                   : 1/50
+Create Date                     : 2010:07:18 19:54:50.50
+Date/Time Original              : 2010:07:18 19:54:50.50
+Modify Date                     : 2010:08:25 13:58:30.50
+Thumbnail Image                 : (Binary data 4437 bytes, use -b option to extract)
+Circle Of Confusion             : 0.020 mm
+Depth Of Field                  : 0.00 m (0.50 - 0.50)
+Field Of View                   : 10.4 deg (0.09 m)
+Focal Length                    : 105.0 mm (35 mm equivalent: 157.0 mm)
+Hyperfocal Distance             : 97.97 m
+Light Value                     : 8.6
+*/
+$title = "";
+$author= "";
+$caption= "";
+$tags=array("closeup", "nature"
+ );
+?>

@@ -1,0 +1,50 @@
+<?php /*
+DCT Encode Version              : 100
+APP14 Flags 0                   : (none)
+APP14 Flags 1                   : (none)
+Color Transform                 : YCbCr
+Exif Byte Order                 : Big-endian (Motorola, MM)
+Image Description               : Fireworks Display
+Artist                          : PictureNet/Corbis
+Copyright                       : PictureNet/Corbis
+XP Title                        : Fireworks Display
+XP Author                       : PictureNet/Corbis
+Padding                         : (Binary data 2060 bytes, use -b option to extract)
+Profile CMM Type                : ADBE
+Profile Version                 : 2.1.0
+Profile Class                   : Display Device Profile
+Color Space Data                : RGB
+Profile Connection Space        : XYZ
+Profile Date Time               : 2000:11:02 17:01:38
+Profile File Signature          : acsp
+Primary Platform                : Apple Computer Inc.
+CMM Flags                       : Not Embedded, Independent
+Device Manufacturer             : none
+Device Model                    : 
+Device Attributes               : Reflective, Glossy, Positive, Color
+Rendering Intent                : Perceptual
+Connection Space Illuminant     : 0.9642 1 0.82491
+Profile Creator                 : ADBE
+Profile ID                      : 0
+Profile Copyright               : (c) 2000 Adobe Systems Inc.
+Profile Description             : Corbis RGB
+Media White Point               : 0.95045 1 1.08905
+Media Black Point               : 0 0 0
+Red Tone Reproduction Curve     : (Binary data 14 bytes, use -b option to extract)
+Green Tone Reproduction Curve   : (Binary data 14 bytes, use -b option to extract)
+Blue Tone Reproduction Curve    : (Binary data 14 bytes, use -b option to extract)
+Red Matrix Column               : 0.44553 0.2081 0.02887
+Green Matrix Column             : 0.38095 0.73355 0.10869
+Blue Matrix Column              : 0.13773 0.05835 0.68735
+About                           : uuid:faf5bdd5-ba3d-11da-ad31-d33d75182f1b
+Creator                         : PictureNet/Corbis
+Rights                          : PictureNet/Corbis
+Title                           : Fireworks Display
+Description                     : Fireworks Display
+*/
+$title = "Fireworks Display";
+$author= "PictureNet/Corbis";
+$caption= "Fireworks Display";
+$tags=array("fireworks"
+ );
+?>

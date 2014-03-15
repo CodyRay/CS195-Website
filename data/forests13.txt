@@ -1,0 +1,24 @@
+<?php /*
+DCT Encode Version              : 100
+APP14 Flags 0                   : (none)
+APP14 Flags 1                   : (none)
+Color Transform                 : YCbCr
+Exif Byte Order                 : Big-endian (Motorola, MM)
+Image Description               : Beech trees in evening sunlight, Wuppertal, Germany
+Artist                          : Dirk Wüstenhagen Imagery/Flickr/Getty Images
+Copyright                       : Dirk Wüstenhagen Imagery/Flickr/Getty Images
+XP Title                        : Beech trees in evening sunlight, Wuppertal, Germany
+XP Author                       : Dirk Wüstenhagen Imagery/Flickr/Getty Images
+Padding                         : (Binary data 2060 bytes, use -b option to extract)
+About                           : uuid:faf5bdd5-ba3d-11da-ad31-d33d75182f1b
+Creator                         : Dirk Wüstenhagen Imagery/Flickr/Getty Images
+Rights                          : Dirk Wüstenhagen Imagery/Flickr/Getty Images
+Title                           : Beech trees in evening sunlight, Wuppertal, Germany
+Description                     : Beech trees in evening sunlight, Wuppertal, Germany
+*/
+$title = "Beech trees in evening sunlight, Wuppertal, Germany";
+$author= "Dirk Wüstenhagen Imagery/Flickr/Getty Images";
+$caption= "Beech trees in evening sunlight, Wuppertal, Germany";
+$tags=array("nature", "trees"
+ );
+?>

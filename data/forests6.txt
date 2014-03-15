@@ -1,0 +1,52 @@
+<?php /*
+DCT Encode Version              : 100
+APP14 Flags 0                   : (none)
+APP14 Flags 1                   : (none)
+Color Transform                 : YCbCr
+Exif Byte Order                 : Big-endian (Motorola, MM)
+Image Description               : Golden sunrise over wildflowers and forest
+Artist                          : fotoVoyager/Vetta/Getty Images
+Copyright                       : fotoVoyager/Vetta/Getty Images
+XP Title                        : Golden sunrise over wildflowers and forest
+XP Author                       : fotoVoyager/Vetta/Getty Images
+Padding                         : (Binary data 2060 bytes, use -b option to extract)
+Profile CMM Type                : KCMS
+Profile Version                 : 2.1.0
+Profile Class                   : Display Device Profile
+Color Space Data                : RGB
+Profile Connection Space        : XYZ
+Profile Date Time               : 1998:12:01 18:58:21
+Profile File Signature          : acsp
+Primary Platform                : Microsoft Corporation
+CMM Flags                       : Not Embedded, Independent
+Device Manufacturer             : KODA
+Device Model                    : ROMM
+Device Attributes               : Reflective, Glossy, Positive, Color
+Rendering Intent                : Perceptual
+Connection Space Illuminant     : 0.9642 1 0.82487
+Profile Creator                 : KODA
+Profile ID                      : 0
+Profile Copyright               : Copyright (c) Eastman Kodak Company, 1999, all rights reserved.
+Profile Description             : ProPhoto RGB
+Media White Point               : 0.9642 1 0.82489
+Red Tone Reproduction Curve     : (Binary data 14 bytes, use -b option to extract)
+Green Tone Reproduction Curve   : (Binary data 14 bytes, use -b option to extract)
+Blue Tone Reproduction Curve    : (Binary data 14 bytes, use -b option to extract)
+Red Matrix Column               : 0.79767 0.28804 0
+Green Matrix Column             : 0.13519 0.71188 0
+Blue Matrix Column              : 0.03134 9e-05 0.82491
+Device Mfg Desc                 : KODAK
+Device Model Desc               : Reference Output Medium Metric(ROMM)
+Make And Model                  : (Binary data 40 bytes, use -b option to extract)
+About                           : uuid:faf5bdd5-ba3d-11da-ad31-d33d75182f1b
+Creator                         : fotoVoyager/Vetta/Getty Images
+Rights                          : fotoVoyager/Vetta/Getty Images
+Title                           : Golden sunrise over wildflowers and forest
+Description                     : Golden sunrise over wildflowers and forest
+*/
+$title = "Golden sunrise over wildflowers and forest";
+$author= "fotoVoyager/Vetta/Getty Images";
+$caption= "Golden sunrise over wildflowers and forest";
+$tags=array("trees", "nature"
+ );
+?>

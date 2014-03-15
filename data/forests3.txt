@@ -1,0 +1,24 @@
+<?php /*
+DCT Encode Version              : 100
+APP14 Flags 0                   : (none)
+APP14 Flags 1                   : (none)
+Color Transform                 : YCbCr
+Exif Byte Order                 : Big-endian (Motorola, MM)
+Image Description               : Asian Bamboo forest, Japan
+Artist                          : Nikada/Vetta/Getty Images
+Copyright                       : Nikada/Vetta/Getty Images
+XP Title                        : Asian Bamboo forest, Japan
+XP Author                       : Nikada/Vetta/Getty Images
+Padding                         : (Binary data 2060 bytes, use -b option to extract)
+About                           : uuid:faf5bdd5-ba3d-11da-ad31-d33d75182f1b
+Creator                         : Nikada/Vetta/Getty Images
+Rights                          : Nikada/Vetta/Getty Images
+Title                           : Asian Bamboo forest, Japan
+Description                     : Asian Bamboo forest, Japan
+*/
+$title = "Asian Bamboo forest, Japan";
+$author= "Nikada/Vetta/Getty Images";
+$caption= "Asian Bamboo forest, Japan";
+$tags=array("trees", "nature"
+ );
+?>

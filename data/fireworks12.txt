@@ -1,0 +1,49 @@
+<?php /*
+DCT Encode Version              : 100
+APP14 Flags 0                   : (none)
+APP14 Flags 1                   : (none)
+Color Transform                 : YCbCr
+Exif Byte Order                 : Big-endian (Motorola, MM)
+Image Description               : Fireworks Exploding over Harbor of Shizuoka
+Artist                          : Image Plan/Corbis
+Copyright                       : Image Plan/Corbis
+XP Title                        : Fireworks Exploding over Harbor of Shizuoka
+XP Author                       : Image Plan/Corbis
+Padding                         : (Binary data 2060 bytes, use -b option to extract)
+Profile CMM Type                : appl
+Profile Version                 : 2.0.0
+Profile Class                   : Display Device Profile
+Color Space Data                : RGB
+Profile Connection Space        : XYZ
+Profile Date Time               : 1998:12:17 16:51:01
+Profile File Signature          : acsp
+Primary Platform                : Apple Computer Inc.
+CMM Flags                       : Not Embedded, Independent
+Device Manufacturer             : appl
+Device Model                    : 
+Device Attributes               : Reflective, Glossy, Positive, Color
+Rendering Intent                : Perceptual
+Connection Space Illuminant     : 0.96419 1 0.82489
+Profile Creator                 : 
+Profile ID                      : 17b9a00417b9b68c0000052017be0d9c
+Red Matrix Column               : (Binary data 20 bytes, use -b option to extract)
+Green Matrix Column             : (Binary data 20 bytes, use -b option to extract)
+Blue Matrix Column              : (Binary data 20 bytes, use -b option to extract)
+Media White Point               : (Binary data 20 bytes, use -b option to extract)
+Red Tone Reproduction Curve     : (Binary data 14 bytes, use -b option to extract)
+Green Tone Reproduction Curve   : (Binary data 14 bytes, use -b option to extract)
+Blue Tone Reproduction Curve    : (Binary data 14 bytes, use -b option to extract)
+Profile Description             : Corbis RGB
+Profile Copyright               : (c) 1998 Corbis Corporation
+About                           : uuid:faf5bdd5-ba3d-11da-ad31-d33d75182f1b
+Creator                         : Image Plan/Corbis
+Rights                          : Image Plan/Corbis
+Title                           : Fireworks Exploding over Harbor of Shizuoka
+Description                     : Fireworks Exploding over Harbor of Shizuoka
+*/
+$title = "Fireworks Exploding over Harbor of Shizuoka";
+$author= "Image Plan/Corbis";
+$caption= "Fireworks Exploding over Harbor of Shizuoka";
+$tags=array("fireworks"
+ );
+?>

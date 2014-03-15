@@ -1,0 +1,24 @@
+<?php /*
+DCT Encode Version              : 100
+APP14 Flags 0                   : (none)
+APP14 Flags 1                   : (none)
+Color Transform                 : YCbCr
+Exif Byte Order                 : Big-endian (Motorola, MM)
+Image Description               : Stream in forest, Bulgaria
+Artist                          : Vetta/Getty Images
+Copyright                       : Vetta/Getty Images
+XP Title                        : Stream in forest, Bulgaria
+XP Author                       : Vetta/Getty Images
+Padding                         : (Binary data 2060 bytes, use -b option to extract)
+About                           : uuid:faf5bdd5-ba3d-11da-ad31-d33d75182f1b
+Creator                         : Vetta/Getty Images
+Rights                          : Vetta/Getty Images
+Title                           : Stream in forest, Bulgaria
+Description                     : Stream in forest, Bulgaria
+*/
+$title = "Stream in forest, Bulgaria";
+$author= "Vetta/Getty Images";
+$caption= "Stream in forest, Bulgaria";
+$tags=array("nature", "trees", "water", "mountains"
+ );
+?>
